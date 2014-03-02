@@ -1,0 +1,21 @@
+body {
+    width:100%;
+    height:100%;
+    margin: 0px;
+    padding: 0px;
+}
+iframe, div {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    background-color:#ccdef6;
+    border: none;
+}
+div {
+    z-index:2;
+}
+iframe{
+    z-index:1;
+}

@@ -1,0 +1,14 @@
+<Module>
+	<ModulePrefs title="Venue List" 
+				 description="Venue publisher widget"
+				 thumbnail="https://dl.dropboxusercontent.com/u/73925382/images/venues.png"
+	             height="250">
+	<Require feature="sap-context">
+	</Require>
+	</ModulePrefs>
+	 
+	<Content href="pub/pub.html" view="authoring, consumption, mobile, preview"></Content>
+
+</Module>
+
+

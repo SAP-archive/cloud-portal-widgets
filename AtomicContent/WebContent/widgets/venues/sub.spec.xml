@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <ModulePrefs title="Venues Map" 
+    			 description="Google Maps Subscriber"
+    			 thumbnail="https://lh4.googleusercontent.com/-2UJ8CLscXyI/AAAAAAAAAAI/AAAAAAAAAAA/Ss1x5u-BI_8/s48-c-k/photo.jpg">	
+	    <Require feature="sap-context"/>
+    </ModulePrefs>
+    <Content href="sub/sub.html" view="authoring, consumption, mobile, preview"></Content>
+</Module>

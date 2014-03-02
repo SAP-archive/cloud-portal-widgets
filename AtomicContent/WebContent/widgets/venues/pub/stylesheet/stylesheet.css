@@ -1,0 +1,91 @@
+
+ 
+ html, body {
+     height: 100%;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+     background-color: transparent;
+     overflow: hidden;
+ }
+
+
+ .title {
+ 	font-size: 16px;
+ 	font-family: Calibri;
+ 	color: #008FCC;
+ 	margin-bottom: 10px;
+ }
+ 
+  .title:visited {
+ 	color: #008FCC;
+ }
+ 
+/*
+ .blue:hover{
+	text-decoration:underline;
+ }
+
+
+ .dark, .dark:visited {
+ 	color: #2d2d2d;
+ }*/
+ 
+ 
+ .contactDetails {
+ 	font-size: 14px;
+ 	font-family: Calibri;
+ 	color: #333333;
+ 	vertical-align: middle;
+ }
+ 
+ .address{
+ 	padding-top: 10px;
+ }
+ 
+ .phoneDetails{
+ 	padding-top: 10px;
+ }
+ 
+
+.details {
+	padding-left: 15px;
+	padding-bottom: 25px;
+}
+
+
+.contactDetails strong a {
+	text-decoration: none;
+}
+
+.space{
+	padding-left: 25px;
+}
+ 
+ .phone {
+ 	margin-right: 5px;
+ 	vertical-align: middle;
+ 	border: 0;
+ 	width: 15px;
+ 	height: 15px;
+ 	/*src:url('../img/phone.png');*/
+ }
+ 
+  .home {  
+ 	margin-right: 5px;
+ 	vertical-align: middle;
+ 	border: 0;
+ 	width: 15px;
+ 	height: 15px;
+ 	/*background-image:url('../img/home.png');*/
+ }
+ 
+ #officeTable  {
+	margin-top: 10px;
+ }
+ 
+ 
+
+
+
+

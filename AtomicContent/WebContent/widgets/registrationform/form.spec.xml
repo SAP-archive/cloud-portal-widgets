@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="Registration Form" description="Registration data is persisted in CRM or C4C systems" 
-  thumbnail="https://dl.dropboxusercontent.com/u/73925382/images/register.png">
+  <ModulePrefs title="Registration Form" description="Registration data persisted in CRM or C4C systems">
         <Require feature="gadgetprefs"/>        
         <Require feature="sap-menu"/>
   </ModulePrefs>

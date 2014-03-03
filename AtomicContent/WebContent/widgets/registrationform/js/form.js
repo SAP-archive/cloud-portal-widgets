@@ -595,12 +595,12 @@
 		    	var isLocal = false;
 		    	if(document.URL.indexOf("localhost:8080") > -1 ){
 		    		isLocal = true;
-		    		src =  window.location.origin + "/atomiccontent/TestServlet";
+		    		src =  window.location.origin + "/atomiccontent/C4CConnectorServlet";
 		    	}
 		    	else{
 		    		var tmp = gadgets.util.getUrlParameters().url;
 		    		var applicationURL = tmp.substring(0, tmp.indexOf(".com") + ".com".length );
-		    		src = gadgets.io.getProxyUrl( applicationURL + "/AtomicContent/TestServlet");
+		    		src = gadgets.io.getProxyUrl( applicationURL + "/AtomicContent/C4CConnectorServlet");
 		    	}
 		    	
 		    	/*		var postdata = composePostPayload( false, isLocal );

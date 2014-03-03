@@ -45,12 +45,12 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>TestServlet</display-name>
-    <servlet-name>TestServlet</servlet-name>
-    <servlet-class>com.TestServlet</servlet-class>
+    <display-name>C4CConnectorServlet</display-name>
+    <servlet-name>C4CConnectorServlet</servlet-name>
+    <servlet-class>com.C4CConnectorServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>TestServlet</servlet-name>
-    <url-pattern>/TestServlet</url-pattern>
+    <servlet-name>C4CConnectorServlet</servlet-name>
+    <url-pattern>/C4CConnectorServlet</url-pattern>
   </servlet-mapping>
 </web-app>

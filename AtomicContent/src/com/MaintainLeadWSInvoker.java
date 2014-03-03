@@ -25,16 +25,6 @@ public class MaintainLeadWSInvoker {
 	private static final Logger log = LoggerFactory
 			.getLogger(MaintainLeadWSInvoker.class.getName());
 
-	public static void main(String[] args) {
-		try {
-		
-			new MaintainLeadWSInvoker().invokeWS("name", "title", "company", "email", "phoneNumber", "true");
-		
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}		
-	}
 
 	
 	public LeadMaintainConfirmationBundleMessage_sync invokeWS(String name, String title, String company, String email, String phoneNumber, String isLocal) 

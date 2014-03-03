@@ -16,16 +16,16 @@ import com.sap.xi.a1s.global.ServiceStub.LeadMaintainConfirmationBundleMessage_s
 /**
  * Servlet implementation class TestServlet
  */
-public class TestServlet extends HttpServlet {
+public class C4CConnectorServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	private static final Logger log = LoggerFactory
-			.getLogger(TestServlet.class.getName());
+			.getLogger(C4CConnectorServlet.class.getName());
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public TestServlet() {
+    public C4CConnectorServlet() {
         super();
         // TODO Auto-generated constructor stub
     }

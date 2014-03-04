@@ -586,7 +586,7 @@
 				
 				var successContainer = jQuery('#emf-success-msg span');
 				// Put the error message
-				successContainer.html("Thank you for registering. We will shortly confirm your application.");			
+				successContainer.html("Thank you for registering.  <br/> We will shortly confirm your application.");			
 			}
 			
 			function formSubmitAjaxToC4C(){

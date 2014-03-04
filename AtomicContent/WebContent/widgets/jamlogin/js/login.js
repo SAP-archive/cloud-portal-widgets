@@ -130,7 +130,7 @@ $.extend(true, Login.prototype, {
      */
     setForm: function setForm() {
         this.$html = [
-            '<h2>Join our JAM Discussions</h2>',
+          //  '<h2>Join our JAM Discussions</h2>',
             '<form id="loginform" method="post" action="/j_security_check" target="login_form_frame">',
             '<ul>',
             this.opts.text,

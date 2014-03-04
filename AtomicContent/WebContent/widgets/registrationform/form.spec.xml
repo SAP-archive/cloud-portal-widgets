@@ -20,10 +20,6 @@
  
 				 <link type="text/css" rel="stylesheet" href="css/form.css"/>             	
             	 <script type="text/javascript" src="js/form.js"></script>
-           	 <!-- 
-          <link type="text/css" rel="stylesheet" href="https://dl.dropboxusercontent.com/u/73925382/opensocial/form/form.css"/>
-            <script type="text/javascript" src="https://dl.dropboxusercontent.com/u/73925382/opensocial/form/form.js"></script>
-            -->
             	<script type="text/javascript">
             			gadgets.util.registerOnLoadHandler(loadViews);
             	</script>          	
@@ -52,8 +48,9 @@
 					
 					<div id="formSuccessDiv" class="formSuccess">
 						<div id="emf-success-msg" class="right emf-success-message">
-							<span class="success-msg">Thanks for registering.</span> 
-					   <br/><span class="success-msg"> We will shortly confirm your application.</span>
+						<span class="success-msg"></span> 
+					  <!-- <br/><span class="success-msg"> We will shortly confirm your application.</span>
+					   -->
 						</div>	
 					</div>
 					

@@ -42,15 +42,12 @@
 						<div id="oDialog"></div>				
 					</div>
 					
-					<div id="formSettingsDiv" class="formSettings">
-						<!-- <div id="divTargetSelector"></div> -->						
+					<div id="formSettingsDiv" class="formSettings">					
 					</div>
 					
 					<div id="formSuccessDiv" class="formSuccess">
 						<div id="emf-success-msg" class="right emf-success-message">
 						<span class="success-msg"></span> 
-					  <!-- <br/><span class="success-msg"> We will shortly confirm your application.</span>
-					   -->
 						</div>	
 					</div>
 					

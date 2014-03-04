@@ -1,0 +1,249 @@
+html, body .sapUiBody{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+	overflow: hidden;	
+	background-color: transparent;
+	/*background-color: rgba(255, 255, 255, 0.70);*/
+};
+
+.sapUiBody{
+	background: transparent;
+	opacity: 0.75;
+}
+
+#formSettingsDiv {
+    font: 12px arial;
+    height: 100%;
+    width: 100%;
+    display: block;
+	background-color: transparent;
+};
+
+
+#formSuccessDiv{
+	height: 87%;
+    width: 96%;
+	background-color: transparent;
+	margin-top: 10px;
+	background: #CCE5F2;  
+};
+
+#formRuntimeDiv  .formSuccess{
+	background-color: rgba(204, 229, 242, 1);  
+	/*opacity: 1;*/
+	position: absolute;
+	height: 600px;
+	width: 94%;
+	padding-right: 20px;
+}
+
+
+#formRuntimeDiv  .formBody .sapUiBtnS {
+	width: 200px;
+	position: absolute;
+	padding-top: 40px;
+	font-family: Calibri normal;
+	font-size:	15px;
+	color: #333333;
+    text-align: center;
+    float: right;
+    margin-right: 5px;
+    padding: 3px;
+   -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+    border: 1px solid #999;
+    cursor: pointer;
+    background: rgb(255, 255, 255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(50%, rgba(243, 243, 243, 1)), color-stop(51%, rgba(237, 237, 237, 1)), color-stop(100%, rgba(255, 255, 255, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0); /* IE6-9 */
+};
+
+#formRuntimeDiv  .formBody .sapUiBtnS:hover {
+    background: rgb(238, 238, 238); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(238, 238, 238, 1)), color-stop(100%, rgba(238, 238, 238, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#eeeeee', GradientType=0); /* IE6-9 */
+};
+
+#formRuntimeDiv  .formBody .sapUiBtnS:active {
+    background: rgb(238, 238, 238); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(238, 238, 238, 1)), color-stop(100%, rgba(204, 204, 204, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#cccccc', GradientType=0); /* IE6-9 */
+};
+
+
+#formRuntimeDiv .emf-error-message{
+	padding-left: 15px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	color: red;
+	font-family: Calibri;
+	font: status-bar;
+};
+
+#formRuntimeDiv {
+    /*height: 100%;
+    width: 100%;*/
+	background-color: transparent;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+};
+
+
+#formRuntimeDiv #headerDiv{
+	padding-top: 15px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	background: transparent;
+}
+
+#formRuntimeDiv #headerDiv .title{
+	font-family: Calibri Medium;
+	font-size: 32px;
+	color: #008fcc;
+};
+
+#formRuntimeDiv #headerDiv .subtitle{
+	font-family: Calibri Bold;
+	font-size: 14px;
+	color: #333333;
+};
+
+#formRuntimeDiv #headerDiv .subsubtitle{
+	font-family: Calibri;
+	font-size: 14px;
+	color: #333333;
+};
+
+
+#formRuntimeDiv .formBody{
+	background: #CCE5F2;  
+	/*opacity: 1;*/
+	background-color: rgba(204, 229, 242, 1);  
+	position: absolute;
+	height: 600px;
+	width: 94%;
+}
+
+#formRuntimeDiv .formBody #oDialog{
+	position: absolute;
+}
+
+#formRuntimeDiv  .formBody  .sapUiLbl{
+	padding-top: 20px;
+	font: 13px Calibri;
+};
+
+#formRuntimeDiv  .formBody .sapUiTf{
+	height: 20px;
+	border-radius: 5px;
+	font-size:  small;
+	font-family: Calibri;
+	padding-left: 5px;
+	padding-right: 5px;
+};
+
+
+#formRuntimeDiv  .sapUiImg {
+	float: right;
+	padding-right: 25px;
+};
+
+#formRuntimeDiv .formSettings{
+	background: #CCE5F2;  
+	/*opacity: 1;*/
+	background-color: rgba(204, 229, 242, 1);  
+	position: absolute;
+	height: 600px;
+	width: 95%;
+}
+
+#formRuntimeDiv  .formSettings  .sapUiLbl{
+	
+	font: 13px Calibri;
+};
+
+#formRuntimeDiv  .formSettings .sapUiTf{
+	height: 20px;
+	border-radius: 5px;
+	font-size:  small;
+	font-family: Calibri;
+	padding-left: 5px;
+	padding-right: 5px;
+};
+
+#formRuntimeDiv  .formSettings .sapUiBtnS {
+	width: 120px;
+	position: absolute;
+	padding-top: 40px;
+	font-family: Calibri normal;
+	font-size:	15px;
+	color: #333333;
+    text-align: center;
+    float: right;
+    margin-right: 5px;
+    padding: 3px;
+   -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+    border: 1px solid #999;
+    cursor: pointer;
+    background: rgb(255, 255, 255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(50%, rgba(243, 243, 243, 1)), color-stop(51%, rgba(237, 237, 237, 1)), color-stop(100%, rgba(255, 255, 255, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0); /* IE6-9 */
+};
+
+#formRuntimeDiv  .formSettings .sapUiBtnS:hover {
+    background: rgb(238, 238, 238); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(238, 238, 238, 1)), color-stop(100%, rgba(238, 238, 238, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#eeeeee', GradientType=0); /* IE6-9 */
+};
+
+#formRuntimeDiv  .formSettings .sapUiBtnS:active {
+    background: rgb(238, 238, 238); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(238, 238, 238, 1)), color-stop(100%, rgba(204, 204, 204, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#cccccc', GradientType=0); /* IE6-9 */
+};
+
+
+#formSuccessDiv .emf-success-message{
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	color: #008FCC;
+	font-family: Calibri;
+	font-size: 16px;
+};

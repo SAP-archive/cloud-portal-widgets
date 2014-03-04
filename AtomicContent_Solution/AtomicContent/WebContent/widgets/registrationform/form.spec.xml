@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Registration Form" description="Registration data persisted in CRM or C4C systems">
+        <Require feature="gadgetprefs"/>        
+        <Require feature="sap-menu"/>
+  </ModulePrefs>
+   <UserPref name="targetSystem" default_value="select"/>
+
+   <Content type="html" view="default, authoring, consumption, mobile, preview">
+        <![CDATA[        
+        <!DOCTYPE HTML>
+		<html>
+			<head>
+				<script src="https://sapui5.netweaver.ondemand.com/resources/sap-ui-core.js"
+					type="text/javascript"
+					id="sap-ui-bootstrap"
+					data-sap-ui-libs="sap.m,sap.ui.commons"
+					>
+				</script>
+ 
+				 <link type="text/css" rel="stylesheet" href="css/form.css"/>             	
+            	 <script type="text/javascript" src="js/form.js"></script>
+            	<script type="text/javascript">
+            			gadgets.util.registerOnLoadHandler(loadViews);
+            	</script>          	
+            </head>
+
+			<body id="body" class="sapUiBody">				
+				
+				
+				<div id="formRuntimeDiv">
+					<div id="headerDiv">
+						<img  style="height: 27px; width: 27px;" alt="" src="images/register.png"/>
+						<span class="title">Registration</span>
+						<br/><span class="subtitle">Registration closes on July 10, 2014</span>
+						<br/><span class="subsubtitle">Fill in the form and we will contact you to finalize your registration.</span>
+					</div>					
+					<div id="formBodyID" class="formBody">
+						<div id="emf-error-msg" class="right emf-error-message">
+							<span id="error-msg"></span>
+						</div>		
+						<div id="oDialog"></div>				
+					</div>
+					
+					<div id="formSettingsDiv" class="formSettings">
+						<!-- <div id="divTargetSelector"></div> -->						
+					</div>
+					
+					<div id="formSuccessDiv" class="formSuccess">
+						<div id="emf-success-msg" class="right emf-success-message">
+						<span class="success-msg"></span> 
+					  <!-- <br/><span class="success-msg"> We will shortly confirm your application.</span>
+					   -->
+						</div>	
+					</div>
+					
+				</div>
+				
+				
+				
+			</body>
+		</html>
+      ]]>
+    </Content>
+</Module>
+
+
+

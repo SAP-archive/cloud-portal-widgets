@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <ModulePrefs title="JAM Login" 
+    			 description="Login to SAP JAM" 
+    			 thumbnail="https://dl.dropboxusercontent.com/u/73925382/images/login.png">
+        <Require feature="core.prefs"/>
+        <Require feature="gadgetprefs"/>
+        <Require feature="sap-navigation">
+            <Param name="outport">
+                {
+	                "ID": 1,
+	                "target": "JAM"
+                }
+            </Param>
+        </Require>
+    </ModulePrefs>
+
+    <Content type="html" view="default, authoring, consumption, mobile, preview">
+        <![CDATA[
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <script type="text/javascript" src="js/login.js"></script>
+      ]]>
+    </Content>
+
+    <Content type="html" view="default, authoring, consumption, mobile, preview">
+        <![CDATA[
+               <div id="container"></div>
+        ]]>
+    </Content>
+
+</Module>

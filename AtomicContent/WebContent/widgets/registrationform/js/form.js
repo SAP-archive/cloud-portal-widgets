@@ -307,7 +307,7 @@
 									new sap.ui.commons.layout.MatrixLayoutCell( "c11", {content:nameTF} ),
 									new sap.ui.commons.layout.MatrixLayoutCell()
 								]}),
-								new sap.ui.commons.layout.MatrixLayoutRow("r2", {/*height: '45px' , */cells:
+								new sap.ui.commons.layout.MatrixLayoutRow("r2", {cells:
 								[
 									new sap.ui.commons.layout.MatrixLayoutCell(),
 									new sap.ui.commons.layout.MatrixLayoutCell( "c21", {content:companyL} ),
@@ -587,7 +587,6 @@
 			}
 			
 			function formSubmitAjaxToC4C(){
-				debugger;
 		    	var src;
 		    	var isLocal = false;
 		    	if(document.URL.indexOf("localhost:8080") > -1 ){
@@ -604,7 +603,6 @@
 		    	
 		    	var xmlhttp=new XMLHttpRequest();
 		    	xmlhttp.onreadystatechange = function() {
-		    		debugger;
 		            if (xmlhttp.readyState === 2) {
 		                if (xmlhttp.status === 201) {
 		                           // OK
@@ -621,26 +619,6 @@
 		    	
 		    	xmlhttp.open("POST",src);
 		    	xmlhttp.send("name="+name);
-
-		 /*     jQuery.ajax({
-		 	     //  type: 'POST',
-		    	   	type: 'GET',
-		 	        url: src,
-		 	      // data: JSON.stringify( composePostPayload(false, isLocal) ),
-		 	      // data:  composePostPayload(false, isLocal),
-		 	    dataType: 'json',
-		 	        success: function(result){
-		 	        	debugger;
-		 	        	showFormSuccess();
-		 	        },
-		 	        error: function (request, textStatus, errorThrown) {
-		 	        	debugger;
-		 	            console.log(request.responseText);
-		 	            console.log(textStatus);
-		 	            console.log(errorThrown);
-		 	           showFormError("Could not connect to C4C system: " + errorThrown);
-		 	        }
-		 		 });*/
 							
 			}		
 			

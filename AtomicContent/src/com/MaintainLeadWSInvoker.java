@@ -27,7 +27,7 @@ public class MaintainLeadWSInvoker {
 
 
 	
-	public LeadMaintainConfirmationBundleMessage_sync invokeWS(String name, String title, String company, String email, String phoneNumber, String isLocal) 
+	public LeadMaintainConfirmationBundleMessage_sync invokeWS(String name, String title, String company, String email, String phoneNumber, boolean isLocal) 
 			throws Exception{
 		
 		log.error("TestServlet: in servlet - invokeWS: Start");

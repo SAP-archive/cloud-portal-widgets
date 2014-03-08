@@ -42,7 +42,7 @@
 						<div id="oDialog"></div>				
 					</div>
 					
-					<div id="formSettingsDiv" class="formSettings">						
+					<div id="formSettingsDiv" class="formSettings">					
 					</div>
 					
 					<div id="formSuccessDiv" class="formSuccess">

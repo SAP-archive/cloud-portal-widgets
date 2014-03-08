@@ -516,10 +516,9 @@
 					
 				
 				}
-				else{
-					formData = "name="+name+"&title="+role+"&company="+company+"&email="+email+"&phone="+phone+"&message="+message+"&isLocal="+isLocal;
+				else{					
 					
-				/*	formData = {								
+				formData = {								
 								"name" : name,
 								"title" : role,
 								"email" : email,
@@ -527,11 +526,11 @@
 								"company" : company,
 								"message" : message,
 								"isLocal" : isLocal
-							};*/
+							};
+					//formData = "name="+name+"&title="+role+"&company="+company+"&email="+email+"&phone="+phone+"&message="+message+"&isLocal="+isLocal;					
 				}
 				
-				return formData;
-				
+				return formData;				
 			};
 			
 			function showFormError(errMsg) {
@@ -564,8 +563,6 @@
 				
 				params[gadgets.io.RequestParameters.POST_DATA] = postdataStr;
 				params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
-		
-				//showFormSuccess();
 		
 				var callback = function ajaxCallback(result) {
 					if (result['rc'] === 201) {
@@ -600,54 +597,55 @@
 		    	else{
 		    		var tmp = gadgets.util.getUrlParameters().url;
 		    		var applicationURL = tmp.substring(0, tmp.indexOf(".com") + ".com".length );
-		    		src = gadgets.io.getProxyUrl( applicationURL + "/AtomicContent/C4CConnectorServlet");
+		    		var fullURL = applicationURL + "/AtomicContent/C4CConnectorServlet";
+		    		
+		    		src = gadgets.io.getProxyUrl(  fullURL );
 		    	}
 		    	
-		    	/*		var postdata = composePostPayload( false, isLocal );
-		    postdata = gadgets.io.encodeValues(postdata);
+		    	var xmlhttp=new XMLHttpRequest();
+		    	xmlhttp.onreadystatechange = function() {
+		    		debugger;
+		            if (xmlhttp.readyState === 2) {
+		                if (xmlhttp.status === 201) {
+		                           // OK
+		                	showFormSuccess();
+		                } else {
+		                           // not OK
+		                	 showFormError("Could not connect to C4C system: " + xmlhttp.responseText);
+		                }
+		            }
+		    	};
 		    	
-				var params = {};			
-				params[gadgets.io.RequestParameters.POST_DATA] = postdata;				
-				params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
+		    	var oCore = sap.ui.getCore();				
+				var name = oCore.getControl('TF-F-Name').getValue();
+		    	
+		    	xmlhttp.open("POST",src);
+		    	xmlhttp.send("name="+name);
 
-		
-				var callback = function ajaxCallback(result) {
-					if (result['rc'] === 201) {
-						showFormSuccess();
-					} else {
-						showFormError("Could not connect to CRM system: " + result.data);
-					}
-				};
-		
-				gadgets.io.makeRequest(src, callback, params);
-				 */
-		       jQuery.ajax({
-		 	        type: 'POST',
+		 /*     jQuery.ajax({
+		 	     //  type: 'POST',
+		    	   	type: 'GET',
 		 	        url: src,
-		 	        data: composePostPayload(false, isLocal),
-		 	        dataType: 'json',
+		 	      // data: JSON.stringify( composePostPayload(false, isLocal) ),
+		 	      // data:  composePostPayload(false, isLocal),
+		 	    dataType: 'json',
 		 	        success: function(result){
 		 	        	debugger;
-		 	        	loadModel(result.data);
 		 	        	showFormSuccess();
 		 	        },
 		 	        error: function (request, textStatus, errorThrown) {
 		 	        	debugger;
-		 	        	alert('Error loading model!');
 		 	            console.log(request.responseText);
 		 	            console.log(textStatus);
 		 	            console.log(errorThrown);
 		 	           showFormError("Could not connect to C4C system: " + errorThrown);
 		 	        }
-		 		 });
-								
+		 		 });*/
+							
 			}		
 			
 		    
-		    function loadModel( data ){
-		    	alert("data: " + data);
-		    };
-				
+
 
 			function displayFormSettings() {
 				jQuery('#formSettingsDiv').show();

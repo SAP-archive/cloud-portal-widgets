@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
     <ModulePrefs title="JAM Login" 
-    			 description="Login to SAP JAM" 
-    			 thumbnail="https://dl.dropboxusercontent.com/u/73925382/images/login.png">
+    			 description="Login to SAP JAM" >
         <Require feature="core.prefs"/>
         <Require feature="gadgetprefs"/>
         <Require feature="sap-navigation">

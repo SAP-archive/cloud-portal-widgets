@@ -604,13 +604,16 @@
 		    	var xmlhttp=new XMLHttpRequest();
 		    	xmlhttp.onreadystatechange = function() {
 		            if (xmlhttp.readyState === 2) {
-		                if (xmlhttp.status === 201) {
+		            	
+		            	showFormSuccess();
+		            	
+		               /* if (xmlhttp.status === 201) {
 		                           // OK
 		                	showFormSuccess();
 		                } else {
 		                           // not OK
 		                	 showFormError("Could not connect to C4C system: " + xmlhttp.responseText);
-		                }
+		                }*/
 		            }
 		    	};
 		    	

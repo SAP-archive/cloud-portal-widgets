@@ -1,0 +1,55 @@
+Manifest-Version: 1.0
+Require-Bundle: org.eclipse.ui.intro,org.eclipse.ui.intro.universal,or
+ g.eclipse.ui
+Bundle-Vendor: SAP
+Bundle-Version: 1.23.1
+Build-Jdk: 1.6.0_51
+Built-By: hudson
+Bundle-Name: SAP HANA Cloud Platform Tools for Java
+Bundle-ManifestVersion: 2
+Created-By: Apache Maven
+Bundle-SymbolicName: com.sap.core.tools.eclipse.server.branding;single
+ ton:=true
+Archiver-Version: Plexus Archiver
+
+Name: intro/overview.xml
+SHA1-Digest: VwPgaOtJbKlTaaJLJMZcUxquV4I=
+
+Name: META-INF/maven/com.sap.core.ide.toolset/com.sap.core.tools.eclip
+ se.server.branding/pom.properties
+SHA1-Digest: 97H3msYzvG8IoOPKCtOmly98+8A=
+
+Name: intro/css/graphics/cloud.png
+SHA1-Digest: bYnXrGP69DdClh1UOImr4x6fJO8=
+
+Name: about.ini
+SHA1-Digest: MjhfIR5MOAZb57UVNPXgUq37/dE=
+
+Name: intro/samples.xml
+SHA1-Digest: 4oUJmABlHigpqtIMhGOlL4oz13s=
+
+Name: intro/whatsnew.xml
+SHA1-Digest: rq0X/TiVneslod0eczycXYV0q2Y=
+
+Name: about.properties
+SHA1-Digest: II+5hsfHuY8rCi/A4Awb7aTxMN0=
+
+Name: plugin.xml
+SHA1-Digest: j5Y5L3bgHXSge3V6r1ejsdKHyBg=
+
+Name: images/nwcloud32.png
+SHA1-Digest: r4It12UeKh2If4bOZQDHSidmX6k=
+
+Name: intro/tutorials.xml
+SHA1-Digest: Qe48Dt6PkvWDzZLGlc0yVAuYauI=
+
+Name: META-INF/maven/com.sap.core.ide.toolset/com.sap.core.tools.eclip
+ se.server.branding/pom.xml
+SHA1-Digest: KIjT33wvGBaZ37AaxM1mAJObjW8=
+
+Name: intro/css/graphics/cloud_hov.png
+SHA1-Digest: Pv7VSMEhsHmHR/C6rS/lC9QAhsA=
+
+Name: intro/css/style.css
+SHA1-Digest: IL/BW3NyMNMH2UaM6NnfClnfeiw=
+

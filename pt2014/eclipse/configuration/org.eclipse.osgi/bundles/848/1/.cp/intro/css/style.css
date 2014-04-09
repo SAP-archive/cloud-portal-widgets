@@ -1,0 +1,2 @@
+a#neo-link img { background-image : url(graphics/cloud.png); }
+a#neo-link:hover img { background-image : url(graphics/cloud_hov.png); }

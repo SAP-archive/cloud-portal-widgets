@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Support Information Collector</title>
+
+<link rel="stylesheet" href="../content/PLUGINS_ROOT/PRODUCT_PLUGIN/book.css" type="text/css"></link>
+</head>
+
+
+<body>
+<h1>Support Information Collector</h1>
+
+
+
+<p>
+Should errors occur in the context of Eclipse-based SAP development tools for which you, as an <b>SAP customer</b>, 
+require more detailed support from SAP, it is of considerable importance that you provide all 
+the required data for such a support case in order to speed up the troubleshooting process. 
+For this purpose, SAP provides the Support Information Collector as a comfortable tool solution. 
+With a few simple mouse clicks, you can <b>generate a support information file</b>. 
+This file contains all the relevant data for your IDE or GUI version, 
+as well as basic information on technical system environment data. 
+You can then add this support file to your OSS problem message as an attachment.
+</p>
+<p>
+In rare cases, however, it can happen that for detailed troubleshooting the SAP support team will 
+request additional information from you. 
+Then you can use the Support Information Collector utility to generate an <b>extended support file</b> version. 
+This extended version can contain additional information about the RFC communication between the IDE client 
+and the ABAP back-end system, or even heap dump, in the case of possible memory consumption issues. 
+</p>
+
+<h3>Confidential Information</h3>	
+<p>The Support Information Collector may collect confidential information. This includes the following:</p>
+	<ul>
+		<li>Information that is available in Java system properties, such as command line parameters</li>
+		<li>Confidential data that has been written to the Eclipse log file</li>
+		<li>Confidential data stored in Eclipse preferences
+		<p><b>NOTE</b>: Passwords stored in the Eclipse secure storage are not included.</p>
+		</li>
+		<li>When you create a heap dump, any data currently stored in memory is included. 
+		This may also enclose cached passwords. </li>
+	</ul>
+</p>
+<p><b>RECOMMENDATION</b></p>
+<p>If you think certain sensitive data should be excluded from the generated support files, 
+make sure to review the created ZIP file before sending it to SAP support. 
+Most data is stored in plain text format so that you can edit it to remove sensitive information. 
+</p>
+
+	<!-- Related topics -->
+	<img src="../../images/ngrelt.png" alt="Related tasks" border="0">
+	<ul>
+	<li><a href="../tasks/providing_info_support.html">Providing Information for SAP Support</a></li>
+	</ul>
+
+</body>
+
+</html>

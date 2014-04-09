@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="SAP - Support Guide for Eclipse-based SAP Development Tools">
+
+   <!-- Getting Started -->
+
+   <!-- Concepts -->
+   <topic label="Concepts">
+      <link toc="toc_Concepts_Support_Info.xml"/>
+   </topic>
+
+   <!-- Tasks -->
+   <topic label="Tasks">
+      <link toc="toc_Tasks_Support_Info.xml"/>
+   </topic>
+
+   <!-- Reference -->
+   <topic href="html/copyright.html" label="Copyright">
+   </topic>
+
+   <!-- Legal -->   
+   <topic label="Important Disclaimers on Legal Aspects" href="html/legal.html">
+   </topic>
+
+
+</toc>

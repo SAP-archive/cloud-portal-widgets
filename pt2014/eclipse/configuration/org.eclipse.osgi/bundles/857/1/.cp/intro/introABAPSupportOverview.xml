@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<introContent>
+
+	<extensionContent id="com.sap.adt.intro.customer.support" name="Customer Support Information" style="css/sample.css" path="overview/@">
+
+		<group label="Getting Support for SAP Customers" style-id="content-group" id="content-group">
+			<link label="Providing Information for SAP Support"
+					url="http://org.eclipse.ui.intro/showHelpTopic?id=/com.sap.ide.support.doc.user/html/tasks/providing_info_support.html"
+					id="abapproject_doc" style-id="content-link">
+				<text>
+					Get familiar with activities when providing information for the troubleshooting process.   
+				</text>	
+			</link>
+		</group>
+
+	</extensionContent>
+
+</introContent>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<introContent>
+  	<extensionContent id="org.eclipse.pde"
+  		style="css/style.css"
+  		name="SAP HANA Cloud Platform" path="tutorials/@">
+		<group id="neo-tutorials-group"
+			label="SAP HANA Cloud Platform"
+			style-id="content-group">
+       		<link label="Creating a HelloWorld application"
+       			url="http://org.eclipse.ui.intro/showHelpTopic?id=/com.sap.core.tools.eclipse.help/e5a8b1d3bb571014a0f89bb4706d4e0b.html"
+       			id="neo-link"
+       			style-id="content-link">
+          		<text>Create a simple "HelloWorld" Web application, which you can use for testing on SAP HANA Cloud Platform</text>
+       		</link>
+       		<link label="All tutorials"
+       			url="http://org.eclipse.ui.intro/showHelpTopic?id=/com.sap.core.tools.eclipse.help/8105b26e430a4aea9dc46a7aa6f8d011.html"
+       			id="neo-link"
+       			style-id="content-link">
+          		<text>Learn how to use the services offered by the platform</text>
+       		</link>
+       	</group>
+  	</extensionContent>
+</introContent>

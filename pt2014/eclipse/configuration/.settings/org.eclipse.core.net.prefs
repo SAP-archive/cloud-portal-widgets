@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+nonProxiedHosts=10.*.*.*|Nexus|*.sap.corp|localhost|127.0.0.1
+org.eclipse.core.net.hasMigrated=true
+proxyData/HTTP/hasAuth=false
+proxyData/HTTP/host=proxy
+proxyData/HTTP/port=8080
+proxyData/HTTPS/hasAuth=false
+proxyData/HTTPS/host=proxy
+proxyData/HTTPS/port=8080
+systemProxiesEnabled=false

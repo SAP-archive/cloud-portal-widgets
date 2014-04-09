@@ -1,0 +1,144 @@
+Manifest-Version: 1.0
+Built-By: hudson
+Bundle-Name: %Bundle-Name
+Created-By: Apache Maven
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.core.runtime;bundle-version="[3.7.0,4.0.0)
+ ",org.eclipse.help;bundle-version="[3.5.100,4.0.0)",org.eclipse.ui.in
+ tro;bundle-version="[3.4.100,4.0.0)",org.eclipse.ui.intro.universal;b
+ undle-version="[3.2.500,4.0.0)"
+Bundle-Vendor: %BundleProvider_xgrp
+Eclipse-SourceReferences: scm:git:ssh://git.wdf.sap.corp:29418/IDE/sup
+ port.collector.git;path="com.sap.ide.support.doc.user";commitId=f00ad
+ fab92b904de1f5ce594fb621ac3cc1c948e
+Build-Jdk: 1.6.0_51
+Bundle-Version: 1.9.5
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.sap.ide.support.doc.user;singleton:=true
+Archiver-Version: Plexus Archiver
+
+Name: toc_Concepts_Support_Info_Add.xml
+SHA1-Digest: qspYBrnUF0WIlPuOQZLN0L5IuhI=
+
+Name: intro/css/graphics/picto/abap_project.png
+SHA1-Digest: nX4c3ciT1Yy1/MDRX2BvH2iIhHU=
+
+Name: book.css
+SHA1-Digest: hUjClL7PrMr5uV/KmEUo5r8pgBM=
+
+Name: html/tasks/images/create_support_file.png
+SHA1-Digest: IR6IrZbR+QRCm53fVTocwt0lJnc=
+
+Name: intro/css/sample.css
+SHA1-Digest: byyToZMxYxIgr3hO16z9Czh7uUA=
+
+Name: images/ngrelr.png
+SHA1-Digest: OzguzM/OK663iNL85kw/xEyPpdw=
+
+Name: html/tasks/adding_support_file.html
+SHA1-Digest: 5z62Q5Va8GL34QL4fEbk6/qwnA8=
+
+Name: html/tasks/images/create_support_file_res.png
+SHA1-Digest: BsggQEs4HEUo0S6dZEZLw67ZNSk=
+
+Name: OSGI-INF/l10n/bundle_pt.properties
+SHA1-Digest: TfgyCf+UP0sgacrz40pb1cIX7JI=
+
+Name: OSGI-INF/l10n/bundle_ja.properties
+SHA1-Digest: 86gstY75tvtOGg9vBaH7Q6/eNCw=
+
+Name: META-INF/maven/com.sap.ide.support/com.sap.ide.support.doc.user/
+ pom.xml
+SHA1-Digest: sXhnI/RDFvPDhbfDQAnJxsUEK0Q=
+
+Name: html/tasks/images/support_info_dialog.png
+SHA1-Digest: CcAexnezigr3cXAaqi0oSk+XDkQ=
+
+Name: html/copyright.html
+SHA1-Digest: bxn6NeTLrALXC/21nK/AAogWoQs=
+
+Name: html/tasks/providing_info_support.html
+SHA1-Digest: PH15qwM+rfnelJZoLD8B1XFDdRw=
+
+Name: OSGI-INF/l10n/bundle_es.properties
+SHA1-Digest: J72A3m7/OMF1BAUY4BH5AVxS6yo=
+
+Name: images/ngrelt.png
+SHA1-Digest: T/aObgW4iyz6C+UTnzXp4mA1cV4=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: BER8LctIlj2+NHubKri9VuegatQ=
+
+Name: toc_Concepts_Support_Info.xml
+SHA1-Digest: sTKbbsXwOyaPy9o/sYeBb9UpenY=
+
+Name: html/tasks/images/create_support_file_b_1.png
+SHA1-Digest: pVMeb/oYaxXZDuI4xBnEwwBETHs=
+
+Name: toc.xml
+SHA1-Digest: zInTk4FNGgetbAyH3y6041OC2Eg=
+
+Name: OSGI-INF/l10n/bundle_en.properties
+SHA1-Digest: OgNQ7kG8NrIfrpzA+iE8k2iK9h8=
+
+Name: OSGI-INF/l10n/bundle_zh_CN.properties
+SHA1-Digest: cobgwvBlsp/9vnPG96ixnNcayec=
+
+Name: html/tasks/creating_support_file.html
+SHA1-Digest: jfwWNJw2a+AREwV6/KvexzgEqzg=
+
+Name: toc_Tasks_Support_Info_Add.xml
+SHA1-Digest: 3ASa+OQSjmGbR5ZJn8vwwrkd5ww=
+
+Name: intro/introABAPSupportOverview.xml
+SHA1-Digest: UtODh0Nz024fpcM49pCpCAVvZYE=
+
+Name: OSGI-INF/l10n/bundle_fr.properties
+SHA1-Digest: eWrRuf1pqEv9kK/h7ghE4rDqagM=
+
+Name: META-INF/maven/com.sap.ide.support/com.sap.ide.support.doc.user/
+ pom.properties
+SHA1-Digest: NcF8DT5MFDNxOytCAA900tBA0Cs=
+
+Name: OSGI-INF/l10n/bundle_ru.properties
+SHA1-Digest: efn0EqQWtLoNKIRRH2cl2+4v25o=
+
+Name: intro/css/graphics/picto/abap_project_doc.png
+SHA1-Digest: CX1805cxypTIzf0JEgTB8zDTpuE=
+
+Name: html/tasks/extending_support_file.html
+SHA1-Digest: +/tEsydDp8PN2qxto8I33ukLYtM=
+
+Name: toc_Tasks_Support_Info.xml
+SHA1-Digest: LXJ/sojwnGTQ9pZqhWmJXMY1Iqk=
+
+Name: plugin.xml
+SHA1-Digest: FnI+BxsfH0qr2VYmB/CkCUP6B+Y=
+
+Name: images/ngrelc.png
+SHA1-Digest: AtrS4kkJDBiPeN+v4oUlyJqqi/M=
+
+Name: OSGI-INF/l10n/bundle_de.properties
+SHA1-Digest: pKksPHJKa9zDQ/ll0EWSoIGKops=
+
+Name: html/legal.html
+SHA1-Digest: 1sp0vaaywLI1HKBXiG/5T6Dsd1c=
+
+Name: create.dir
+SHA1-Digest: 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+
+Name: html/tasks/images/support_info_file.png
+SHA1-Digest: TL8W/T0e0FqXdBmRpgb+emvqMiM=
+
+Name: images/icon_run.png
+SHA1-Digest: 2STMlJQWulm40h4UY/munCIIF+k=
+
+Name: contexts/contexts_SupportInfo.xml
+SHA1-Digest: eebbd86xC77cgn48GuNi961Vwco=
+
+Name: html/tasks/images/create_support_file_extended.png
+SHA1-Digest: h1hSP5tEd1/EojFkJ5uMXmhfZlU=
+
+Name: html/concepts/support_info_collector.html
+SHA1-Digest: FuBpUVSKF6XPaZ1XLNeQNvUSmq0=
+

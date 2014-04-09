@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contexts>
+   
+
+
+    <!-- Actions -->
+    <context id="create_support_info_action_context" title="Support Information Collector">
+        <description>Use this function to create a support information file for the troubleshooting process.
+        </description>
+        <topic href="html/tasks/providing_info_support.html" label="Providing Information for SAP Support"/>
+        <topic href="html/tasks/creating_support_file.html" label="Creating a Support File"/>       
+        <topic href="html/concepts/support_info_collector.html" label="Support Information Collector"/>
+    </context>
+
+
+
+
+    <!-- Dialogs -->
+    <!-- Help context for Create Support Information dialog -->    
+    <context id="create_support_info_dialog_context">
+       <description>Use this dialog to create a support information file for the troubleshooting process.
+       </description>
+       <topic href="html/tasks/providing_info_support.html" label="Providing Information for SAP Support"/>
+       <topic href="html/tasks/creating_support_file.html" label="Creating a Support File"/>       
+       <topic href="html/concepts/support_info_collector.html" label="Support Information Collector"/>
+    </context>
+
+    <!-- Editors -->
+
+
+
+    <!-- Preference pages -->
+    <!-- Help context for Support preferences page -->   
+    <context id="abapdev_support_preference_context">
+        <description>Use this page to enable the ABAP communication log.</description>
+        <topic href="html/tasks/extending_support_file.html" label="Extending the Support File to Include Additional Information"/>
+    </context>
+    
+    
+    <!-- Property pages -->
+
+
+    <!-- Views -->
+
+
+
+    <!-- Windows -->
+
+
+
+    <!-- Wizards -->
+
+
+
+    <!-- Wizard pages -->
+
+    
+   
+</contexts>

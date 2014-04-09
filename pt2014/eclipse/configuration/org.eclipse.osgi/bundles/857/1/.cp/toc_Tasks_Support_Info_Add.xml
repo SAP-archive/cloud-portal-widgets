@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Tasks" link_to="/com.sap.adt.abapdev.guide.doc.user/toc_Tasks.xml#support.info.collector.tasks">
+   <topic href="html/tasks/providing_info_support.html" label="Providing Information for SAP Support">
+      <topic href="html/tasks/creating_support_file.html" label="Creating a Support Information File">
+      </topic>
+      <topic href="html/tasks/adding_support_file.html" label="Adding Support File to OSS Message">
+      </topic>
+      <topic href="html/tasks/extending_support_file.html" label="Extending the Support File to Include Additional Information">
+      </topic>
+   </topic> 
+</toc>

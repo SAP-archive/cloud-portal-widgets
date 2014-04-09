@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<introContent>
+  	<extensionContent id="org.eclipse.ui.workbench"
+  		style="css/style.css"
+  		name="SAP HANA Cloud Platform" path="whatsnew/@">
+		<group id="neo-whatsnew-group"
+			label="SAP HANA Cloud Platform"
+			style-id="content-group">
+       		<link label="Release notes"
+       			url="http://org.eclipse.ui.intro/openBrowser?url=http://scn.sap.com/docs/DOC-28833"
+       			id="neo-link"
+       			style-id="content-link">
+          		<text>Information about what is new and what has changed since the last release</text>
+       		</link>
+       	</group>
+  	</extensionContent>
+</introContent>

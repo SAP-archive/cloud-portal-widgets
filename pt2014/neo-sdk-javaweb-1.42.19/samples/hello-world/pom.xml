@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.sap.cloud.sample</groupId>
+        <artifactId>sdk-samples-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath>..</relativePath>
+    </parent>
+
+    <artifactId>hello-world</artifactId>
+    <packaging>war</packaging>
+
+    <description>This is a simple HelloWorld Web application.</description>
+    <licenses>
+        <license>
+            <name>SAP DEVELOPER LICENSE AGREEMENT</name>
+            <url>https://tools.hana.ondemand.com/developer-license-2.0.0.txt</url>
+        </license>
+    </licenses>
+
+    <dependencies>
+        <!-- Required for compilation and provided at runtime (SAP HANA Cloud Platform SDK API libraries) -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>system</scope>
+            <systemPath>${sap.cloud.sdk.path}/api/javax.servlet-3.0.0.v201103241009.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.1</version>
+            <scope>system</scope>
+            <systemPath>${sap.cloud.sdk.path}/api/slf4j-api-1.7.2.jar</systemPath>
+        </dependency>
+
+        <!-- Required for servlet mock testing (option 1) -->
+        <dependency>
+            <groupId>org.easymock</groupId>
+            <artifactId>easymock</artifactId>
+            <version>3.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Required for servlet emulation testing (option 2) -->
+        <dependency>
+            <groupId>httpunit</groupId>
+            <artifactId>httpunit</artifactId>
+            <version>1.6.2</version> <!-- Do NOT use 1.7 as it submits form twice -->
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

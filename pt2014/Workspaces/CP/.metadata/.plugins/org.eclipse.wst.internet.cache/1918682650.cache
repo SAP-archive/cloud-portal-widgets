@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- TOOLBAR_EXEMPT --><HTML lang=en xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink = 
+"http://www.w3.org/1999/xlink" xmlns:rddl = "http://www.rddl.org/"><HEAD><TITLE>Web Services Policy Framework (WS-Policy) and Web Services Policy Attachment (WS-PolicyAttachment)</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><link href="http://www.rddl.org/xrd.css" type="text/css" rel="stylesheet" />
+</head><META content="MSHTML 6.00.2900.2802" name=GENERATOR></HEAD>
+<BODY>
+<H1>Web Services Policy Framework (WS-Policy) and Web Services Policy Attachment 
+(WS-PolicyAttachment)</H1>
+<P>March 2006</P>
+<H2>Introduction</H2>
+<P>This document is a directory of links to resources related to the WS-Policy 
+and WS-PolicyAttachment specifications.</P><hr>
+<h1>Published March 2006</h1>
+<p>Note: the namespaces have not changed in the March 2006 publication as they 
+are backwards compatible with the September 2004 publication.</p>
+<H2>XML Schema for WS-Policy and WS-PolicyAttachment:</H2><rddl:resource 
+id=WS-Policy_Schema xlink:actuate="none" xlink:show="none" xlink:type="simple" 
+xlink:href="ws-policy.xsd" 
+xlink:arcrole="http://www.rddl.org/purposes#schema-validation" 
+xlink:role="http://www.w3.org/2001/XMLSchema" 
+xlink:title="WS-Policy schema document">
+<P><A 
+href="http://schemas.xmlsoap.org/ws/2004/09/policy/ws-policy.xsd">http://schemas.xmlsoap.org/ws/2004/09/policy/ws-policy.xsd</A></P></rddl:resource>
+<H2>Specifications:</H2>
+<P><a href="http://specs.xmlsoap.org/ws/2004/09/policy/ws-policy.pdf">The 
+WS-Policy Framework specification version 1.2</a></P>
+<P><a href="http://specs.xmlsoap.org/ws/2004/09/policy/ws-policyattachment.pdf">
+The WS-Policy Attachment specification version 1.2</a></P>
+<p>The WS-Policy and WS-PolicyAttachment specifications were submitted to W3C in April 2006. 
+Links to these specifications at W3C are:</p>
+<p><a href="http://www.w3.org/Submission/2006/SUBM-WS-Policy-20060425/">
+http://www.w3.org/Submission/2006/SUBM-WS-Policy-20060425/</a></p>
+<p><a href="http://www.w3.org/Submission/2006/SUBM-WS-PolicyAttachment-20060425/">
+http://www.w3.org/Submission/2006/SUBM-WS-PolicyAttachment-20060425/</a><br>
+&nbsp;</p>
+<hr>
+<h1>Superseded Versions</h1>
+<h1>Published September 2004</h1>
+<H2>XML Schema for WS-Policy and WS-PolicyAttachment:</H2>
+<rddl:resource 
+id=WS-Policy_Schema0 xlink:actuate="none" xlink:show="none" xlink:type="simple" 
+xlink:href="ws-policy.xsd" 
+xlink:arcrole="http://www.rddl.org/purposes#schema-validation" 
+xlink:role="http://www.w3.org/2001/XMLSchema" 
+xlink:title="WS-Policy schema document">
+<P><A 
+href="http://schemas.xmlsoap.org/ws/2004/09/policy/ws-policy0904.xsd">http://schemas.xmlsoap.org/ws/2004/09/policy/ws-policy0904.xsd</A></P></rddl:resource>
+<h2>Specifications:</h2>
+<p><a href="http://specs.xmlsoap.org/ws/2004/09/policy/ws-policy0904.pdf">The 
+WS-Policy Framework specification published September 2004</a></p>
+<p><a href="http://specs.xmlsoap.org/ws/2004/09/policy/ws-policyattachment0904.pdf">
+The WS-Policy Attachment specification published September 2004</a></p>
+</BODY></HTML>

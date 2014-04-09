@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.sap.cloud.sample</groupId>
+        <artifactId>sdk-samples-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath>..</relativePath>
+    </parent>
+
+    <artifactId>document-store</artifactId>
+    <packaging>war</packaging>
+
+    <description>This sample demonstrates how to manage unstructured content in your Web application.</description>
+    <licenses>
+        <license>
+            <name>SAP DEVELOPER LICENSE AGREEMENT</name>
+            <url>https://tools.hana.ondemand.com/developer-license-2.0.0.txt</url>
+        </license>
+    </licenses>
+
+    <properties>
+        <!-- Version of OpenCMIS JARs in API dependencies -->
+        <opencmis.version>0.10.0</opencmis.version>
+    </properties>
+
+    <dependencies>
+        <!-- Required for compilation and provided at runtime (SAP HANA Cloud Platform SDK API libraries) -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>system</scope>
+            <systemPath>${sap.cloud.sdk.path}/api/javax.servlet-3.0.0.v201103241009.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.sap.cloud</groupId>
+            <artifactId>neo-sdk-core-api</artifactId>
+            <version>${sap.cloud.sdk.version}</version>
+            <scope>system</scope>
+            <systemPath>${sap.cloud.sdk.path}/api/neo-sdk-core-api-${sap.cloud.sdk.version}.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.chemistry.opencmis</groupId>
+            <artifactId>chemistry-opencmis-client-api</artifactId>
+            <version>${opencmis.version}</version>
+            <scope>system</scope>
+            <systemPath>${sap.cloud.sdk.path}/api/chemistry-opencmis-client-api-${opencmis.version}.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.chemistry.opencmis</groupId>
+            <artifactId>chemistry-opencmis-client-commons-api</artifactId>
+            <version>${opencmis.version}</version>
+            <scope>system</scope>
+            <systemPath>${sap.cloud.sdk.path}/api/chemistry-opencmis-commons-api-${opencmis.version}.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.1</version>
+            <scope>system</scope>
+            <systemPath>${sap.cloud.sdk.path}/api/slf4j-api-1.7.2.jar</systemPath>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>local-integration-tests</id>
+            <build>
+                <plugins>
+                    <!-- Install test user called John Doe (username is john and password is doe) for local integration testing -->
+                    <plugin>
+                        <artifactId>maven-resources-plugin</artifactId>
+                        <version>2.4.2</version>
+                        <executions>
+                            <execution>
+                                <id>install-sample-user-to-local-server</id>
+                                <phase>pre-integration-test</phase>
+                                <goals>
+                                    <goal>copy-resources</goal>
+                                </goals>
+                                <configuration>
+                                    <outputDirectory>${local.server.root}/config_master/com.sap.security.um.provider.neo.local</outputDirectory>
+                                    <resources>
+                                        <resource>
+                                            <directory>${basedir}</directory>
+                                            <includes>
+                                                <include>neogroups.json</include>
+                                                <include>neousers.json</include>
+                                            </includes>
+                                            <filtering>false</filtering>
+                                        </resource>
+                                    </resources>
+                                    <overwrite>true</overwrite>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <!-- Starts/stops Mongo DB before/after local integration testing -->
+                    <plugin>
+                        <groupId>com.github.joelittlejohn.embedmongo</groupId>
+                        <artifactId>embedmongo-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>start-mongo-db</id>
+                                <phase>pre-integration-test</phase>
+                                <goals>
+                                    <goal>start</goal>
+                                </goals>
+                            </execution>
+                            <execution>
+                                <id>stop-mongo-db</id>
+                                <phase>post-integration-test</phase>
+                                <goals>
+                                    <goal>stop</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <port>27017</port>
+                            <databaseDirectory>${project.build.directory}/mongo-db</databaseDirectory>
+                            <logging>none</logging>
+                            <proxyHost>${proxy.host}</proxyHost>
+                            <proxyPort>${proxy.port}</proxyPort>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

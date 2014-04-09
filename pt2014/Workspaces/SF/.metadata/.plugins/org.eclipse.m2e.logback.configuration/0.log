@@ -1,0 +1,53 @@
+2014-03-02 20:43:25,514 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-egit does not contain lifecycle mapping metadata
+2014-03-02 20:43:25,518 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subversive does not contain lifecycle mapping metadata
+2014-03-02 20:43:25,520 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subclipse does not contain lifecycle mapping metadata
+2014-03-02 20:43:32,982 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.sap.hana.clould.samples.benefits:com.sap.hana.cloud.samples.benefits:1.0.1 @ C:\Users\i034051\Desktop\sf\com.sap.hana.cloud.samples.benefits\pom.xml.
+2014-03-02 20:43:33,669 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.sap.hana.cloud.samples.benefits/src
+2014-03-02 20:43:33,670 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /com.sap.hana.cloud.samples.benefits/src overlaps with sources folder /com.sap.hana.cloud.samples.benefits/src
+2014-03-02 20:43:33,672 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.sap.hana.cloud.samples.benefits/resources
+2014-03-02 20:43:33,683 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.sap.hana.cloud.samples.benefits/test
+2014-03-02 20:43:35,114 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.sap.hana.clould.samples.benefits:com.sap.hana.cloud.samples.benefits:1.0.1 @ C:\Users\i034051\Desktop\sf\com.sap.hana.cloud.samples.benefits\pom.xml.
+2014-03-02 20:43:36,615 [Worker-5] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Project import completed 4 sec
+2014-03-02 20:43:40,718 [Worker-11] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2014-03-02 20:43:40,719 [Worker-11] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2014-03-02 20:43:42,304 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.sap.hana.clould.samples.benefits:com.sap.hana.cloud.samples.benefits:1.0.1 @ C:\Users\i034051\Desktop\sf\com.sap.hana.cloud.samples.benefits\pom.xml.
+2014-03-02 20:43:43,467 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying com.sap.ui5.resource_1.16.9.jar to C:\Users\i034051\Desktop\sf\com.sap.hana.cloud.samples.benefits\WebContent\WEB-INF\lib\resource-1.16.9.jar
+2014-03-02 20:43:43,486 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-03-02 20:43:43,493 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2014-03-02 20:43:43,505 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2014-03-02 20:43:43,522 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-03-02 20:43:43,522 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\i034051\Desktop\sf\com.sap.hana.cloud.samples.benefits\test
+2014-03-02 20:43:58,704 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-03-02 20:43:58,708 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2014-03-02 20:43:58,709 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2014-03-02 20:43:58,710 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-03-02 20:43:58,710 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\i034051\Desktop\sf\com.sap.hana.cloud.samples.benefits\test
+2014-03-03 12:24:55,590 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-egit does not contain lifecycle mapping metadata
+2014-03-03 12:24:55,596 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subversive does not contain lifecycle mapping metadata
+2014-03-03 12:24:55,597 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subclipse does not contain lifecycle mapping metadata
+2014-03-03 12:25:10,511 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.sap.hana.clould.samples.benefits:com.sap.hana.cloud.samples.benefits:1.0.1 @ C:\pt2014\cloud-sfsf-benefits-ext-master\com.sap.hana.cloud.samples.benefits\pom.xml.
+2014-03-03 12:25:11,247 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.sap.hana.cloud.samples.benefits/src
+2014-03-03 12:25:11,247 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /com.sap.hana.cloud.samples.benefits/src overlaps with sources folder /com.sap.hana.cloud.samples.benefits/src
+2014-03-03 12:25:11,250 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.sap.hana.cloud.samples.benefits/resources
+2014-03-03 12:25:11,250 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.sap.hana.cloud.samples.benefits/test
+2014-03-03 12:25:12,073 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.sap.hana.clould.samples.benefits:com.sap.hana.cloud.samples.benefits:1.0.1 @ C:\pt2014\cloud-sfsf-benefits-ext-master\com.sap.hana.cloud.samples.benefits\pom.xml.
+2014-03-03 12:25:14,081 [Worker-6] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Project import completed 4 sec
+2014-03-03 12:25:19,892 [Worker-13] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2014-03-03 12:25:19,892 [Worker-13] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2014-03-03 12:25:21,195 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.sap.hana.clould.samples.benefits:com.sap.hana.cloud.samples.benefits:1.0.1 @ C:\pt2014\cloud-sfsf-benefits-ext-master\com.sap.hana.cloud.samples.benefits\pom.xml.
+2014-03-03 12:25:24,587 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - com.sap.ui5.resource_1.16.9.jar already exists in destination.
+2014-03-03 12:25:24,597 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-03-03 12:25:24,604 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2014-03-03 12:25:24,616 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2014-03-03 12:25:24,633 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-03-03 12:25:24,633 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\pt2014\cloud-sfsf-benefits-ext-master\com.sap.hana.cloud.samples.benefits\test
+2014-03-03 14:57:07,136 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-03-03 14:57:07,147 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2014-03-03 14:57:07,152 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2014-03-03 14:57:07,155 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-03-03 14:57:07,155 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\pt2014\cloud-sfsf-benefits-ext-master\com.sap.hana.cloud.samples.benefits\test
+2014-03-03 20:24:40,508 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-03-03 20:24:40,520 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2014-03-03 20:24:40,524 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2014-03-03 20:24:40,527 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-03-03 20:24:40,527 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\pt2014\cloud-sfsf-benefits-ext-master\com.sap.hana.cloud.samples.benefits\test

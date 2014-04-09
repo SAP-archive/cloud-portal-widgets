@@ -1,0 +1,17 @@
+# External JavaDoc URLs per JAR
+chemistry-opencmis-client-api-0.10.0.jar = http://chemistry.apache.org/java/0.10.0/maven/apidocs/
+chemistry-opencmis-commons-api-0.10.0.jar = http://chemistry.apache.org/java/0.10.0/maven/apidocs/
+com.sap.javax.activation-1.1.1.jar = http://docs.oracle.com/javase/6/docs/api/
+com.sap.javax.faces-1.2.0.BUILD-20100618.jar = http://docs.oracle.com/javaee/6/api/
+com.sap.javax.servlet.jsp.jstl-1.2.0.BUILD-20100618.jar = http://docs.oracle.com/javaee/6/api/
+com.springsource.javax.persistence-1.0.0.jar = http://docs.oracle.com/javaee/6/api/
+com.springsource.javax.transaction-1.1.0.jar = http://docs.oracle.com/javase/6/docs/api/
+httpclient-4.1.3.jar = http://hc.apache.org/httpcomponents-client-ga/httpclient/apidocs
+httpcore-4.1.4.jar = http://hc.apache.org/httpcomponents-core-ga/httpcore/apidocs
+javax.annotation-1.1.0.v201105051105.jar = http://docs.oracle.com/javaee/6/api/
+javax.el-2.2.0.v201105051105.jar = http://docs.oracle.com/javaee/6/api/
+javax.servlet-3.0.0.v201103241009.jar = http://docs.oracle.com/javaee/6/api/
+javax.servlet.jsp-2.2.0.v201103241009.jar = http://docs.oracle.com/javaee/6/api/
+javax.websocket-api-1.0.jar = 
+mail-1.4.1.jar = http://docs.oracle.com/javaee/6/api/
+slf4j-api-1.7.2.jar = http://www.slf4j.org/apidocs/

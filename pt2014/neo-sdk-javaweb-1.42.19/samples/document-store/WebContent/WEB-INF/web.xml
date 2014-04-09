@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+    id="WebApp_ID" version="2.5">
+
+    <!-- Main sample servlet mapped to / so that the integration test harness can detect readiness (generic for all samples) -->
+    <servlet>
+        <servlet-name>DocumentStoreServlet</servlet-name>
+        <servlet-class>com.sap.cloud.sample.documentstore.DocumentStoreServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DocumentStoreServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet connecting to the document store service, requires authentication -->
+    <servlet>
+        <servlet-name>DocumentStoreConnectServlet</servlet-name>
+        <servlet-class>com.sap.cloud.sample.documentstore.DocumentStoreConnectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DocumentStoreConnectServlet</servlet-name>
+        <url-pattern>/connect</url-pattern>
+    </servlet-mapping>
+
+    <!-- Declare the document store service (SAP HANA Cloud Platform document service) -->
+    <resource-ref>
+        <res-ref-name>EcmService</res-ref-name>
+        <res-type>com.sap.ecm.api.EcmService</res-type>
+    </resource-ref>
+
+    <!-- Secure application -->
+    <login-config>
+        <auth-method>BASIC</auth-method>
+    </login-config>
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Protected Area</web-resource-name>
+            <url-pattern>/connect/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>Everyone</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Public Area</web-resource-name>
+            <url-pattern>/*</url-pattern>
+        </web-resource-collection>
+    </security-constraint>
+    <security-role>
+        <description>All SAP HANA Cloud Platform users</description>
+        <role-name>Everyone</role-name>
+    </security-role>
+</web-app>

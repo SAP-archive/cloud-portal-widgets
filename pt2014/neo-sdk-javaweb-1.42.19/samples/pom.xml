@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.sap.cloud.sample</groupId>
+    <artifactId>sdk-samples-parent</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <description>This the parent for the samples.</description>
+    <licenses>
+        <license>
+            <name>SAP DEVELOPER LICENSE AGREEMENT</name>
+            <url>https://tools.hana.ondemand.com/developer-license-2.0.0.txt</url>
+        </license>
+     </licenses>
+
+    <properties>
+        <!-- Properties that hold host and port of proxy should you have one - otherwise remove all occurrences of the properties -->
+        <proxy.host>${env.PROXY_HOST}</proxy.host>
+        <proxy.port>${env.PROXY_PORT}</proxy.port>
+
+        <!-- Properties that hold information on the location and version of the SAP HANA Cloud Platform SDK -->
+        <sap.cloud.sdk.path>${project.basedir}/../..</sap.cloud.sdk.path>
+        <sap.cloud.sdk.version>1.42.19</sap.cloud.sdk.version>
+
+        <!-- Property that holds supported JDK version for the given SAP HANA Cloud Platform SDK -->
+        <sap.cloud.jdk.version>1.6</sap.cloud.jdk.version>
+
+        <!-- Properties that hold information on your SAP HANA Cloud Platform account -->
+        <sap.cloud.host>hana.ondemand.com</sap.cloud.host>
+        <sap.cloud.account>${env.SAP_CLOUD_ACCOUNT}</sap.cloud.account>
+        <sap.cloud.username>${env.SAP_CLOUD_USERNAME}</sap.cloud.username>
+        <sap.cloud.password>${env.SAP_CLOUD_PASSWORD}</sap.cloud.password>
+        <sap.cloud.application>sample</sap.cloud.application>
+
+        <!-- Properties that hold the local server information required for local integration-testing -->
+        <local.server.root>${project.build.directory}/server</local.server.root>
+        <local.server.host>localhost</local.server.host>
+        <local.server.console.port>9003</local.server.console.port>
+        <local.server.jmx.port>9004</local.server.jmx.port>
+        <local.server.http.port>9080</local.server.http.port>
+        <local.server.https.port>9443</local.server.https.port>
+        <local.server.ajp.port>9009</local.server.ajp.port>
+
+        <!-- Property setting source encoding to UTF-8 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- Required for testing -->
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-library</artifactId>
+            <version>1.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Required for integration testing -->
+        <dependency>
+            <groupId>httpunit</groupId>
+            <artifactId>httpunit</artifactId>
+            <version>1.6.2</version> <!-- Do NOT use 1.7 as it submits form twice -->
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xmlParserAPIs</artifactId>
+            <version>2.2.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xercesImpl</artifactId>
+            <version>2.6.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>nekohtml</groupId>
+            <artifactId>nekohtml</artifactId>
+            <version>0.9.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>rhino</groupId>
+            <artifactId>js</artifactId>
+            <version>1.6R5</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <!-- Map the Eclipse file system layout to the Maven plug-ins -->
+        <sourceDirectory>${project.basedir}/src</sourceDirectory>
+        <testSourceDirectory>${project.basedir}/test</testSourceDirectory>
+        <outputDirectory>${project.basedir}/war/WEB-INF/classes</outputDirectory>
+        <testOutputDirectory>${project.basedir}/bin/classes</testOutputDirectory>
+        <resources>
+            <resource>
+                <directory>${project.basedir}/src</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+        </resources>
+        <testResources>
+            <testResource>
+                <directory>${project.basedir}/test</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </testResource>
+        </testResources>
+
+        <plugins>
+            <!-- Map the Eclipse file system layout to the Maven plug-ins -->
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.1</version>
+                <configuration>
+                    <warName>${project.artifactId}</warName>
+                    <warSourceDirectory>WebContent</warSourceDirectory>
+                    <archive>
+                        <manifestFile>WebContent/META-INF/MANIFEST.MF</manifestFile>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <!-- Set compiler to officially supported JDK version for the given SAP HANA Cloud Platform SDK -->
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5.1</version>
+                <configuration>
+                    <source>${sap.cloud.jdk.version}</source>
+                    <target>${sap.cloud.jdk.version}</target>
+                    <showDeprecation>true</showDeprecation>
+                    <showWarnings>true</showWarnings>
+                </configuration>
+            </plugin>
+
+            <!-- Include only unit tests for maven-surefire-plugin that is run in test phase -->
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.12</version>
+                <configuration>
+                    <excludes>
+                        <exclude>**/integrationtest/**/*Test.java</exclude>
+                    </excludes>
+                    <includes>
+                        <include>**/test/**/*Test.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+
+            <!-- Include only integration tests for maven-failsafe-plugin that is run in integration-test phase -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.12</version>
+                <configuration>
+                    <excludes>
+                        <exclude>**/test/**/*Test.java</exclude>
+                    </excludes>
+                    <includes>
+                        <include>**/integrationtest/**/*Test.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+
+            <!-- Enforce officially supported JDK and validated Maven version for the given SAP HANA Cloud Platform SDK or higher -->
+            <plugin>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>1.0.1</version>
+                <executions>
+                    <execution>
+                        <id>enforce-maven</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireJavaVersion>
+                                    <version>[${sap.cloud.jdk.version},2.0)</version>
+                                </requireJavaVersion>
+                                <requireMavenVersion>
+                                    <version>[3.0.3, 4.0.0)</version>
+                                </requireMavenVersion>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+
+        <pluginManagement>
+            <plugins>
+                <!-- Force m2e to ignore plugin goal that it doesn't support naturally -->
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.apache.maven.plugins
+                                        </groupId>
+                                        <artifactId>
+                                            maven-enforcer-plugin
+                                        </artifactId>
+                                        <versionRange>
+                                            [0.0.1,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>enforce</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore></ignore>
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <profiles>
+        <!-- Activate compiler warnings when matching JDK is present (compiler then doesn't generate bootstrap warnings) -->
+        <profile>
+            <id>compiler-warnings</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+                <jdk>1.6</jdk>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>2.5.1</version>
+                        <configuration>
+                            <compilerArguments>
+                                <Werror />
+                            </compilerArguments>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <!-- Choose correct command line scripts for interaction with SAP HANA Cloud Platform based on detected operating system -->
+        <profile>
+            <id>unix-scripts</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+                <os>
+                    <family>Unix</family>
+                </os>
+            </activation>
+            <properties>
+                <sap.cloud.console.shell>sh</sap.cloud.console.shell>
+                <sap.cloud.console.script>neo.sh</sap.cloud.console.script>
+            </properties>
+        </profile>
+        <profile>
+            <id>windows-scripts</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+                <os>
+                    <family>Windows</family>
+                </os>
+            </activation>
+            <properties>
+                <sap.cloud.console.shell>cmd</sap.cloud.console.shell>
+                <sap.cloud.console.script>/c neo.bat</sap.cloud.console.script>
+            </properties>
+        </profile>
+
+        <!-- Install local server from the P2 repository that is contained inside the SAP HANA Cloud SDK, deploy the built web application
+            into it, start local server, wait for it and the built and deployed web application to become available, integration-test
+            the web application on the local server, and stop the local server finally - note that you need to supply the environment
+            variables PROXY_HOST and PROXY_PORT if you have a proxy -->
+        <profile>
+            <id>local-integration-tests</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-enforcer-plugin</artifactId>
+                        <version>1.0.1</version>
+                        <executions>
+                            <execution>
+                                <id>enforce-maven</id>
+                                <goals>
+                                    <goal>enforce</goal>
+                                </goals>
+                                <configuration>
+                                    <rules>
+                                        <requireProperty>
+                                            <property>proxy.host</property>
+                                            <message>Environment variable PROXY_HOST is missing, but required!</message>
+                                        </requireProperty>
+                                        <requireProperty>
+                                            <property>proxy.port</property>
+                                            <message>Environment variable PROXY_PORT is missing, but required!</message>
+                                        </requireProperty>
+                                    </rules>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <version>1.7</version>
+                        <executions>
+                            <execution>
+                                <id>prepare-local-server</id>
+                                <phase>pre-integration-test</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <target>
+                                        <copy file="${project.build.directory}/${project.artifactId}.war" todir="${local.server.root}/pickup" />
+                                        <exec dir="${sap.cloud.sdk.path}/tools" executable="${sap.cloud.console.shell}"
+                                            failonerror="true">
+                                            <arg
+                                                line="${sap.cloud.console.script} install-local --location ${local.server.root} --jmxPort ${local.server.jmx.port} --httpPort ${local.server.http.port} --httpsPort ${local.server.https.port} --ajpPort ${local.server.ajp.port} --httpProxyHost ${proxy.host} --httpProxyPort ${proxy.port} --httpsProxyHost ${proxy.host} --httpsProxyPort ${proxy.port}" />
+                                        </exec>
+                                        <exec dir="${sap.cloud.sdk.path}/tools" executable="${sap.cloud.console.shell}"
+                                            failonerror="false">
+                                            <arg
+                                                line="${sap.cloud.console.script} start-local --location ${local.server.root} --consolePort ${local.server.console.port} --waitUrl http://${local.server.host}:${local.server.http.port}/${project.artifactId}/" />
+                                        </exec>
+                                    </target>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>cleanup-local-server</id>
+                                <phase>post-integration-test</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <target>
+                                        <exec dir="${sap.cloud.sdk.path}/tools" executable="${sap.cloud.console.shell}"
+                                            failonerror="true">
+                                            <arg
+                                                line="${sap.cloud.console.script} stop-local --consolePort ${local.server.console.port}" />
+                                        </exec>
+                                    </target>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-failsafe-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>execute-local-integration-tests</id>
+                                <phase>integration-test</phase>
+                                <goals>
+                                    <goal>integration-test</goal>
+                                </goals>
+                                <configuration>
+                                    <argLine>-Dhttp.proxyHost=${proxy.host} -Dhttp.proxyPort=${proxy.port} -Dhttps.proxyHost=${proxy.host} -Dhttps.proxyPort=${proxy.port}</argLine>
+                                    <systemPropertyVariables>
+                                        <integration.test.server.url>http://${local.server.host}:${local.server.http.port}</integration.test.server.url>
+                                    </systemPropertyVariables>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>verify-local-integration-tests</id>
+                                <goals>
+                                    <goal>verify</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <!-- Stop cloud server, deploy the built web application into it, start cloud server, wait for it and the built and
+            deployed web application to become available, integration-test the web application on the cloud server, and stop the cloud
+            server finally - note that you need to supply the environment variables SAP_CLOUD_ACCOUNT, SAP_CLOUD_USERNAME, and SAP_CLOUD_PASSWORD
+            for the operations to pass successfully and PROXY_HOST and PROXY_PORT if you have a proxy -->
+        <profile>
+            <id>cloud-integration-tests</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-enforcer-plugin</artifactId>
+                        <version>1.0.1</version>
+                        <executions>
+                            <execution>
+                                <id>enforce-maven</id>
+                                <goals>
+                                    <goal>enforce</goal>
+                                </goals>
+                                <configuration>
+                                    <rules>
+                                        <requireProperty>
+                                            <property>proxy.host</property>
+                                            <message>Environment variable PROXY_HOST is missing, but required!</message>
+                                        </requireProperty>
+                                        <requireProperty>
+                                            <property>proxy.port</property>
+                                            <message>Environment variable PROXY_PORT is missing, but required!</message>
+                                        </requireProperty>
+                                        <requireProperty>
+                                            <property>sap.cloud.account</property>
+                                            <message>Environment variable SAP_CLOUD_ACCOUNT is missing, but required!</message>
+                                        </requireProperty>
+                                        <requireProperty>
+                                            <property>sap.cloud.username</property>
+                                            <message>Environment variable SAP_CLOUD_USERNAME is missing, but required!</message>
+                                        </requireProperty>
+                                        <requireProperty>
+                                            <property>sap.cloud.password</property>
+                                            <message>Environment variable SAP_CLOUD_PASSWORD is missing, but required!</message>
+                                        </requireProperty>
+                                    </rules>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <version>1.7</version>
+                        <executions>
+                            <execution>
+                                <id>prepare-cloud-server</id>
+                                <phase>pre-integration-test</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <target>
+                                        <exec dir="${sap.cloud.sdk.path}/tools" executable="${sap.cloud.console.shell}"
+                                            failonerror="true">
+                                            <env key="HTTPS_PROXY_HOST" value="${proxy.host}" />
+                                            <env key="HTTPS_PROXY_PORT" value="${proxy.port}" />
+                                            <env key="https_proxy" value="https://${proxy.host}:${proxy.port}/" />
+                                            <arg
+                                                line="${sap.cloud.console.script} stop -account ${sap.cloud.account} -application ${sap.cloud.application} -host https://${sap.cloud.host} -user ${sap.cloud.username} -password ${sap.cloud.password} -sync" />
+                                        </exec>
+                                        <exec dir="${sap.cloud.sdk.path}/tools" executable="${sap.cloud.console.shell}"
+                                            failonerror="true">
+                                            <env key="HTTPS_PROXY_HOST" value="${proxy.host}" />
+                                            <env key="HTTPS_PROXY_PORT" value="${proxy.port}" />
+                                            <env key="https_proxy" value="https://${proxy.host}:${proxy.port}/" />
+                                            <arg
+                                                line="${sap.cloud.console.script} deploy -account ${sap.cloud.account} -application ${sap.cloud.application} -host https://${sap.cloud.host} -user ${sap.cloud.username} -password ${sap.cloud.password} -source ${project.build.directory}/${project.artifactId}.war" />
+                                        </exec>
+                                        <exec dir="${sap.cloud.sdk.path}/tools" executable="${sap.cloud.console.shell}"
+                                            failonerror="true">
+                                            <env key="HTTPS_PROXY_HOST" value="${proxy.host}" />
+                                            <env key="HTTPS_PROXY_PORT" value="${proxy.port}" />
+                                            <env key="https_proxy" value="https://${proxy.host}:${proxy.port}/" />
+                                            <arg
+                                                line="${sap.cloud.console.script} start -account ${sap.cloud.account} -application ${sap.cloud.application} -host https://${sap.cloud.host} -user ${sap.cloud.username} -password ${sap.cloud.password} -sync" />
+                                        </exec>
+                                    </target>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>cleanup-cloud-server</id>
+                                <phase>post-integration-test</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <target>
+                                        <exec dir="${sap.cloud.sdk.path}/tools" executable="${sap.cloud.console.shell}"
+                                            failonerror="true">
+                                            <env key="HTTPS_PROXY_HOST" value="${proxy.host}" />
+                                            <env key="HTTPS_PROXY_PORT" value="${proxy.port}" />
+                                            <env key="https_proxy" value="https://${proxy.host}:${proxy.port}/" />
+                                            <arg
+                                                line="${sap.cloud.console.script} stop -account ${sap.cloud.account} -application ${sap.cloud.application} -host https://${sap.cloud.host} -user ${sap.cloud.username} -password ${sap.cloud.password} -sync" />
+                                        </exec>
+                                    </target>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-failsafe-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>execute-cloud-integration-tests</id>
+                                <phase>integration-test</phase>
+                                <goals>
+                                    <goal>integration-test</goal>
+                                </goals>
+                                <configuration>
+                                    <argLine>-Dhttp.proxyHost=${proxy.host} -Dhttp.proxyPort=${proxy.port} -Dhttps.proxyHost=${proxy.host} -Dhttps.proxyPort=${proxy.port}</argLine>
+                                    <systemPropertyVariables>
+                                        <sap.cloud.username>${sap.cloud.username}</sap.cloud.username>
+                                        <sap.cloud.password>${sap.cloud.password}</sap.cloud.password>
+                                        <integration.test.server.url>https://${sap.cloud.application}${sap.cloud.account}.${sap.cloud.host}</integration.test.server.url>
+                                    </systemPropertyVariables>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>verify-cloud-integration-tests</id>
+                                <goals>
+                                    <goal>verify</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

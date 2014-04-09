@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.sap.cloud.sample</groupId>
+        <artifactId>sdk-samples-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath>..</relativePath>
+    </parent>
+
+    <artifactId>mail</artifactId>
+    <packaging>war</packaging>
+
+    <description>This sample demonstrates sending e-mails from a simple Web application.</description>
+    <licenses>
+        <license>
+            <name>SAP DEVELOPER LICENSE AGREEMENT</name>
+            <url>https://tools.hana.ondemand.com/developer-license-2.0.0.txt</url>
+        </license>
+    </licenses>
+
+    <properties>
+        <!-- Properties that hold information on your mail account -->
+        <mail.host>${env.MAIL_HOST}</mail.host>
+        <mail.port>587</mail.port>
+        <mail.starttls>true</mail.starttls>
+        <mail.user>${env.MAIL_USER}</mail.user>
+        <mail.password>${env.MAIL_PASSWORD}</mail.password>
+        <mail.from.address>${env.MAIL_FROM_ADDRESS}</mail.from.address>
+        <mail.to.address>${env.MAIL_TO_ADDRESS}</mail.to.address>
+    </properties>
+
+    <dependencies>
+        <!-- Required for compilation and provided at runtime (SAP HANA Cloud Platform SDK API libraries) -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>3.0</version>
+            <scope>system</scope>
+            <systemPath>${sap.cloud.sdk.path}/api/javax.servlet-3.0.0.v201103241009.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4.1</version>
+            <scope>system</scope>
+            <systemPath>${sap.cloud.sdk.path}/api/mail-1.4.1.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.2</version>
+            <scope>system</scope>
+            <systemPath>${sap.cloud.sdk.path}/api/slf4j-api-1.7.2.jar</systemPath>
+        </dependency>
+
+        <!-- Required for servlet emulation testing -->
+        <dependency>
+            <groupId>httpunit</groupId>
+            <artifactId>httpunit</artifactId>
+            <version>1.6.2</version> <!-- Do NOT use 1.7 as it submits form twice -->
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Set properties that hold information on your mail account for integration testing -->
+            <plugin>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <configuration>
+                    <systemPropertyVariables>
+                        <mail.from.address>${mail.from.address}</mail.from.address>
+                        <mail.to.address>${mail.to.address}</mail.to.address>
+                    </systemPropertyVariables>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>cloud-integration-tests</id>
+            <build>
+                <plugins>
+                    <!-- Inject mail session properties and copy session to the right location -->
+                    <plugin>
+                        <artifactId>maven-resources-plugin</artifactId>
+                        <version>2.4.2</version>
+                        <executions>
+                            <execution>
+                                <id>filter-mail-session-before-usage</id>
+                                <phase>process-resources</phase>
+                                <goals>
+                                    <goal>copy-resources</goal>
+                                </goals>
+                                <configuration>
+                                    <outputDirectory>${project.build.directory}/mail-configuration</outputDirectory>
+                                    <resources>
+                                        <resource>
+                                            <directory>${basedir}</directory>
+                                            <includes>
+                                                <include>Session</include>
+                                            </includes>
+                                            <filtering>true</filtering>
+                                        </resource>
+                                    </resources>
+                                    <overwrite>true</overwrite>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <!-- Install mail session that the sample requires into the cloud server -->
+                    <plugin>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <version>1.7</version>
+                        <executions>
+                            <execution>
+                                <id>install-mail-session-to-cloud-server</id>
+                                <phase>pre-integration-test</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <target>
+                                        <exec dir="${sap.cloud.sdk.path}/tools" executable="${sap.cloud.console.shell}"
+                                            failonerror="true">
+                                            <env key="HTTPS_PROXY_HOST" value="${proxy.host}" />
+                                            <env key="HTTPS_PROXY_PORT" value="${proxy.port}" />
+                                            <env key="https_proxy" value="https://${proxy.host}:${proxy.port}/" />
+                                            <arg
+                                                line="${sap.cloud.console.script} put-destination -account ${sap.cloud.account} -application ${sap.cloud.application} -host https://${sap.cloud.host} -user ${sap.cloud.username} -password ${sap.cloud.password} -localpath ${project.build.directory}/mail-configuration/Session" />
+                                        </exec>
+                                    </target>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

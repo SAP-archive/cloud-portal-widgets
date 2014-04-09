@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="true" key="J2EE_EXPORT_OVERWRITE"/>
+	<item value="false" key="J2EE_EXPORT_SOURCE"/>
+	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="C:\Cloud\git\localserver_instance\pickup\atomiccontent.war"/>
+		<item value="C:\pt2014\atomiccontent.war"/>
+	</list>
+</section>

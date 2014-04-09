@@ -1,0 +1,1545 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="skin" content="experience" />
+    
+<title>SAP Software & Solutions | Business Applications & IT  | SAP</title>
+<meta name="keywords" content="SAP, Enterprise, Business, Management, Administration, Database, Cloud, Mobile, HANA, Software, Solutions, Services, Technology, Utilization, Tools, ERP, SCM, PLM, SRM, CRM" />
+<meta name="description" content="With its breadth of business applications, services, database and technology, SAP is the world's leading provider of enterprise software and services. Learn how your business can benefit by our solutions." />
+
+<script type="text/javascript">
+CQURLInfo = {
+    "contextPath": null,
+    "requestPath": '\/content\/sapcom\/global\/usa\/en_us',
+    "selectorString": null,
+    "selectors": [],
+    "extension": 'html',
+    "suffix": null,
+    "systemId": 'bb3b98f0-807b-4298-a380-e8b1cfc0430c',
+    "runModes": 'publish,prod'
+};</script>
+<script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/foundation/main.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/foundation/shared.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/foundation/jquery-ui.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/foundation/personalization/jcarousel.js"></script>
+<script type="text/javascript" src="/etc/designs/sapcom/clientlibs.js"></script>
+<link rel="stylesheet" href="/etc/clientlibs/foundation/main.css" type="text/css">
+<link rel="stylesheet" href="/etc/clientlibs/foundation/personalization/jcarousel.css" type="text/css">
+<link rel="stylesheet" href="/etc/clientlibs/foundation/jquery-ui/themes/default.css" type="text/css">
+
+    
+    
+    
+    
+
+   
+    
+
+    
+        <link rel="canonical" href="http://www.sap.com/index.html"/>
+    
+    
+    
+ 
+    
+
+    <link href="/etc/designs/sapcom/static.css" rel="stylesheet" type="text/css">
+<link href="/etc/designs/sapcom.css" rel="stylesheet" type="text/css">
+
+     
+    <link href="/etc/designs/sapcom/resources/www_sap_com/favicon.ico" rel="shortcut icon"/>
+     
+    
+    <link href="/etc/designs/sapcom/resources/global/ui/css/sapcom.css" media="all" rel="stylesheet" type="text/css"/>
+    
+    
+    
+ 
+    <link href="/etc/designs/sapcom/resources/global/ui/css/cq5.css" media="all" rel="stylesheet" type="text/css"/>
+    
+    
+    <link href="/etc/designs/sapcom/resources/global/ui/css/securelayers.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="/etc/designs/sapcom/resources/global/ui/css/print.css" media="print" rel="stylesheet" type="text/css"/>
+    <link href="/etc/designs/sapcom/resources/global/ui/css/login.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="/etc/designs/sapcom/resources/global/ui/css/sapcom_countryselector.css" rel="stylesheet" type="text/css"/>
+     <link href="/etc/designs/sapcom/resources/global/ui/css/sapcom-home.css" rel="stylesheet" type="text/css"/>
+     
+
+    <!--  calibrate the optilomscilometer 2013.05.22 -->
+    
+
+
+
+
+
+      
+
+
+    <script src="/etc/designs/sapcom/resources/global/ui/js/jquery.js" type="text/javascript"></script>
+    
+    <link rel="stylesheet" type="text/css" href="http://global.sap.com:80/global/ui/richmedia/css/UMP/rm_UMP_css.css"/> 
+    <script language="javascript" type="text/javascript" data-main="http://global.sap.com:80/global/ui/richmedia/js/rm_initializer" src="http://global.sap.com:80/global/ui/richmedia/js/require.js"> </script>
+    <script type="text/javascript">UMP_CQ = true;</script>
+
+    
+    <script src="/etc/designs/sapcom/resources/global/ui/js/head.js" type="text/javascript"></script>
+  
+    <script src="/etc/designs/sapcom/resources/global/ui/js/nav-slider.js" type="text/javascript"></script>
+    <script src="/etc/designs/sapcom/resources/global/js/samlsession.js" type="text/javascript"></script>
+    <script src="/etc/designs/sapcom/resources/global/ui/js/jquery/jquery.bpopup.js" type="text/javascript"></script>
+    <script src="/etc/designs/sapcom/resources/global/ui/js/registration/modalWindow.js" type="text/javascript"></script>
+    <script src="/etc/designs/sapcom/resources/global/ui/js/jquery/jquery.ba-postmessage.js" type="text/javascript"></script>
+    <script src="/etc/designs/sapcom/resources/global/ui/js/country-selector.js" type="text/javascript"></script>
+    <script src="/etc/designs/sapcom/resources/global/ui/js/rotator.js" type="text/javascript"></script>
+    <input type="hidden" id="path" value="/content/sapcom/global/usa/en_us.html">
+    <input type="hidden" id="homepageidentifier" value="true">
+    <input type="hidden" id="expirationTime"  value="2" />
+    
+
+
+
+
+<script>
+// if no heroID cookie set get hero background from SAP home page
+var defaultHeroBackground = '273627';
+</script>
+<script type="text/javascript" src="/etc/clientlibs/sapcom/jquery/cookie.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/sapcom/hero.js"></script>
+
+    
+</head>
+
+    <body id="home">
+    <!-- Adobe Marketing Cloud Tag Loader Code
+Copyright 1996-2013 Adobe, Inc. All Rights Reserved
+More info available at http://www.adobe.com/solutions/digital-marketing.html -->
+<script type="text/javascript">//<![CDATA[
+var amc=amc||{};if(!amc.on){amc.on=amc.call=function(){}};
+document.write("<scr"+"ipt type=\"text/javascript\" src=\"//www.adobetag.com/d1/v2/ZDEtc2FwLTU5ODQtMjcxMS0=/amc.js\"></sc"+"ript>");
+//]]></script>
+<!-- End Adobe Marketing Cloud Tag Loader Code -->
+                    
+     
+
+    
+   <div class="clientcontext"><script type="text/javascript" src="/etc/clientlibs/foundation/librarymanager.js"></script>
+<script type="text/javascript">
+CQClientLibraryManager.write([{"p":"/etc/clientlibs/foundation/personalization/themes/default.css","c":[]},{"p":"/etc/clientlibs/foundation/personalization/ie6/themes/default.css","c":["ie6"]}],false);
+</script>
+
+<script type="text/javascript" src="/etc/clientcontext/legacy/config.init.js?path=/content/sapcom/global/usa/en_us"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("/etc/segmentation");
+        CQ_Analytics.ClientContextUtils.init("/etc/clientcontext/default","/content/sapcom/global/usa/en_us");
+        CQ_Analytics.ClientContextUtils.initUI("/etc/clientcontext/default","/content/sapcom/global/usa/en_us");
+    });
+</script></div>
+ 
+       <div class="testTarget parsys"><div class="snowflake section">
+
+
+    
+        <div> <br></div><img id='theImg' style="display:none" src='http://217.91.248.220/pavilion/pavilion.png' alt='pavilion'>
+		<div class="clearfix"></div>
+    
+  
+   
+    
+    </div>
+
+                  
+            
+
+           
+      
+            
+<script type="text/javascript" src="/etc/clientlibs/foundation/testandtarget/mbox.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/foundation/testandtarget.js"></script>
+
+<script type="text/javascript" src="/etc/clientlibs/foundation/testandtarget/util.js"></script>
+
+
+
+<div class="mboxDefault" id="content-sapcom-global-usa-en_us-testTarget-start_3b6e" >
+
+
+<div>
+
+      
+      
+                  
+
+
+</div>
+<div class="section end">
+
+                  
+               
+ 
+
+ 
+ 
+    </div>  
+</div>
+
+<script type="text/javascript">
+CQ_Analytics.TestTarget.init('sapglobalmarketingin');
+mboxCreate("sap_glo_hp_hero")
+</script>
+
+
+
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+
+
+
+    
+<div id="page">
+       
+<!--begin header content-->
+<!--googleoff: index-->
+
+
+<div id="wcms_popup_window" style="display:none;min-width:667px;"></div>
+<div id="bumper" style="left: -485px; width: 1920px; margin-right: -485px; height: 0px;">
+        <div id="inside-bump">      
+            <div id="bump-content">
+<p><span class="bump-bold"></span><div class="parbase ribbontext">
+
+
+
+
+<p>Welcome to our &quot;United States&quot; site. Choose another country by clicking &quot;United States.&quot; To learn more about our company, visit <a href="http://global.sap.com/corporate-en/index.epx">SAP AG</a>.<br>
+Willkommen auf unserer Website für die USA. Zum Wechseln der Länderversion, klicken Sie auf &quot;United States.&quot; Erfahren Sie mehr über <a href="http://global.sap.com/corporate-de/index.epx">das Unternehmen SAP AG</a>.<br>
+</p>
+</div>
+</p> 
+<div id="bump-closeButton" onclick="closeRibbon()"><img src="/etc/designs/sapcom/resources/www_sap_com/global/ui/images/ux/bump-closebutton.png"></div>
+            </div>
+        </div>
+        <div id="bumper-bg" style="height: 55px;"></div>
+        <div class="bumper-arrow-line" id="bumper-arrow-left" style="width: 848px;"></div><div class="bumper-arrow-line" id="bumper-arrow-right" style="width: 1043px;"></div><div id="bumper-arrow" style="left: 848px;"></div>
+     </div>
+
+
+<div id="headercontent">    
+<div id="header" >
+
+            
+            
+            <q>
+                <div class="headerLogo">
+
+
+
+<a href="/index.html" shape="rect" title="SAP"><img alt="SAP" src="/content/sapcom/global/usa/en_us/_jcr_content/headerLogo/image.img.png" height="33" width="66"><span>The Best-Run Businesses Run SAP</span></a>
+
+
+</div>
+
+            </q>
+            
+            
+            
+            
+            
+                
+                   
+            <div class="utilityNav">
+
+
+<!-- Utility Nav Start-->
+<input type="hidden" name="pageLanguage" id="pageLanguage" value="/content/sapcom/global/usa/en_us"/>
+<ul id="nav-utilitytop" >
+
+	<li class="login"><div class="headerlink headerLink">
+
+
+
+
+
+
+
+   
+<a href="http://global.sap.com/country-selector.epx" title="Change Country/Language" id="utilitynav-locationselect" registrationtype="" istrackingenabled="true" linkurl="http://global.sap.com/country-selector.epx" target="_self" onclick="s_trackEngagement('header:United States','1','http://global.sap.com/country-selector.epx')" class="" tracktype="header" shape="rect" alttext="Change Country/Language" linkname="United States">United States</a>
+
+</div>
+</li>
+
+	<li class="login"><div class="headerlink_2 headerLink">
+
+
+
+
+
+
+
+   
+<a href="javascript:void('');" title="Subscribe to the SAP Newsletter" onclick="SAP.wcms.registrationWindow.show(SAP.wcms.registrationWindow.type.NEWSLETTER, SAP.wcms.registrationWindowOnCloseCallback, null, {});s_trackEngagement('header:Newsletter','1','not available');">Newsletter</a>
+
+</div>
+</li>
+
+	<li class="login"><div class="headerlink_0 headerLink">
+
+
+
+
+
+
+
+   
+<a href="/communities/hub.html" title="Community" id="utilitynav-locationselect" registrationtype="" istrackingenabled="true" linkurl="/content/sapcom/global/usa/en_us/communities/hub.html" target="_self" onclick="s_trackEngagement('header:Community','1','http://www.sap.com/communities/hub.html')" class="" tracktype="header" shape="rect" alttext="Community" linkname="Community">Community</a>
+
+</div>
+</li>
+
+	<li class="login"><div class="headerlink_1 headerLink">
+
+
+
+
+
+
+
+   
+<a href="/software-free-trials/index.html" title="Free Trials" id="utilitynav-locationselect" registrationtype="" istrackingenabled="true" linkurl="/content/sapcom/global/usa/en_us/software-free-trials/index.html" target="_self" onclick="s_trackEngagement('header:Free Trials','1','http://www.sap.com/software-free-trials/index.html')" class="" tracktype="header" shape="rect" alttext="Free Trials" linkname="Free Trials">Free Trials</a>
+
+</div>
+</li>
+
+	<li class="login"><div class="loginInfo logininfo">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript">
+    /** User our own callback function to update the profile link when the user has been retrieved from the server **/
+    function updateProfileLink(user){
+        /** Make sure user has been retrieved before updating the link **/  
+        if (!user.isEmpty()){
+            $('#anonymous').hide();
+            $('#loggedin').show();
+            $('a.welcome').text('Hello,  ' + user.getFirstname());
+            $('#logout').text('Logout');
+        } else {
+            $('#loggedin').hide();          
+            $('#anonymous').show();
+        }
+        
+    }
+
+	
+    //login-dropdown
+    var lDropDown = {
+        ddIsOpen: false,
+        initalize: function() {
+            $('.login-dropdown').click(function (e) {
+                e.preventDefault();
+                if (lDropDown.ddIsOpen) {
+                    lDropDown.removeDD($(this));
+                } else {
+                    lDropDown.displayDD($(this));
+                }           
+            });
+        },
+        displayDD: function(mObj) {
+            $(mObj).addClass('dropdown-li');
+            $(mObj).addClass('dropdown-a');
+            
+            floatDiv = "<div id='login-dropdown'>" + $('#dropdown-content').html() + "</div>";
+            
+            cW = $('.login-dropdown').width() + 14;
+            cW = (cW < 55) ? 55 : cW;
+            cT = $('.login-dropdown').offset().top + $('.login-dropdown').height() + 2;
+            cL = $('.login-dropdown').position().left + $('#nav-utilitytop').position().left + 1;       
+            
+            $('#header').append(floatDiv);
+            $('#login-dropdown').css({'top' : '7px', 'left' : cL + 'px', 'width' : cW + 'px', 'min-width' : '95px'});
+            $('a.welcome').css({'font-weight' : 'bold'});
+            
+            lDropDown.ddIsOpen = true;
+        },
+        removeDD: function(mObj) {
+            $('#login-dropdown').remove();
+            $(mObj).removeClass('dropdown-li');
+            $(mObj).removeClass('dropdown-a');
+            lDropDown.ddIsOpen = false;
+        }
+    }
+    
+    
+    $(window).load(function () {
+        lDropDown.initalize();
+        $('.closeMe').click(function (e) {
+	       	 $('#login-dropdown').remove();
+	       });
+		/** Get some Javascript objects that represent the user that has logged in **/
+	    var userFactory = new WCMS.IDS.Users.UserFactory();
+	    userFactory.getUser(updateProfileLink);
+    });
+	
+	$(window).click(function(evt) {
+        var target = evt.target;
+        var inside = $("#loggedin a");
+        if (target.className != "login-dropdown welcome dropdown-li dropdown-a") {
+           if(lDropDown && lDropDown.ddIsOpen)
+           {
+               lDropDown.removeDD(inside);
+           }
+    }
+   });
+        
+</script>
+
+
+    
+        <span id="anonymous">
+            
+                
+                
+                    <a href="" onclick="tryIdsLogin('en_US');s_trackEngagement('header:SAP Login','1','not available')" title='Log In To SAP.com'>Login</a>
+                
+             
+        </span>
+        <span id="loggedin" style="display:none">
+            <a class="login-dropdown welcome" href="javascript:void('')" onclick="s_trackEngagement('header:Hello','1','not available');"></a>
+            <div id="dropdown-content">
+               <a class="menu-item welcome closeMe" href="javascript:void('')" onclick="s_trackEngagement('header:Hello','1','not available');"></a>
+               <a id="newprofile" href="/profile/index.html" onclick="s_trackEngagement('header:YourSapCom','1','/profile/index');" title='Your SAP.com' class="menu-item"> Your SAP.com </a>
+               <a id="logout" href="" onclick="saml_logout();s_trackEngagement('header:Logout','1','not available');" title='Logout' class="menu-item"></a>
+            </div>
+        </span>
+    
+    
+
+
+
+ 
+
+    
+	<script src="https://accounts.sap.com/ui/resources/javascripts/SAP_IDS.js?locale=en_US"></script>
+		
+	<a rel="IDS_ForgotPassword" href="#" name="www.sap.com" style="display:none;">Forgot Password</a>
+	
+	
+ 	
+
+
+</div>
+</li>
+
+</ul>
+<ul id="nav-utilitybtm-headerlinks" >
+
+	<li class="login"><div class="contactCTAHeaderLinks contactctaheaderlink">
+
+
+
+
+
+
+<script src="/etc/designs/sapcom/resources/global/js/mtagconfig/mtagconfig.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+var lpMTagConfig = lpMTagConfig || {}; lpMTagConfig.vars = lpMTagConfig.vars || [];
+
+lpMTagConfig.lpNumber = "37021986";
+
+
+var url = window.location.hash;
+if(url=='') {
+    url = window.location.href;
+}
+//MOWCMS-4706 - BlockThisPage is always set to 'yes', it should be set to 'no'.
+lpMTagConfig.vars.push(  ["Site", "sap"],["Country", "us"],["Language", "en"],["Collection", "general"],
+        ["Section", "Home"],["WBSCode", "CRM-XH14-CHT-CTCIBT"],["Unit", "sales"],
+        ["Url",url] );
+</script>
+
+
+
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+            <td style="vertical-align:top;">
+                <span id="phone" style="padding: 2px 7px;float:left;" 
+                    >+1-800-872-1727</span>
+            </td>    
+            
+                <td style="vertical-align:top;">
+                    <li id="lpVoiceButtonDiv1" onclick="s_trackEngagement('header:Call Me Now','1','not available')">&nbsp;&nbsp;</li>
+                </td>
+            
+            
+                <td style="vertical-align:top;">
+                    <li id="lpChatButtonDiv1" onclick="s_trackEngagement('header:Chat Now','1','not available')">&nbsp;&nbsp;</li>
+                </td>
+            
+            <td style="vertical-align:top;">
+            
+                
+                
+ <span><a onclick="s_trackEngagement('header:Contact US','1','https://global.sap.com/contactsap/index.epx?pmelayer=true')" href="javascript:SAP.wcms.registrationWindow.show(SAP.wcms.registrationWindow.type.CONTACT_US, SAP.wcms.registrationWindowOnCloseCallback, null, {})">Contact Us</a></span>
+                
+            
+            </td>
+        </tr>
+    </table>
+    
+          
+    <div id="livepersonscript">
+        <script type="text/javascript">
+         allowclicktochat = 'true';  
+         allowclicktocall = 'true';
+        </script>
+    </div>
+
+
+
+
+
+
+</div>
+</li>
+
+	<li class="login"><div class="headerlink headerLink">
+
+
+
+
+
+
+
+   
+<a href="http://store.sap.com" title="Buy SAP Products Online" id="utilitynav-locationselect" registrationtype="" istrackingenabled="true" linkurl="http://store.sap.com" target="_blank" onclick="s_trackEngagement('header:Store','1','http://store.sap.com')" class="" tracktype="header" shape="rect" alttext="Buy SAP Products Online" linkname="Store">Store</a>
+
+</div>
+</li>
+
+</ul>
+<!-- Utility Nav End--></div>
+
+            
+            
+                       
+                        <div id="searchsite" ><div class="headerSearch headersearch">
+
+
+    
+    <form id="headersearch-form" action="/search/search-results.html" class="search" enctype="application/x-www-form-urlencoded" method="get" title="Search SAP.com">
+        <fieldset>
+            <label for="searchsite-input">Search</label>
+            <input class="search-input focusClear" id="searchsite-input" name="Query" type="text"/>
+            <input class="search-submit" id="searchsite-submit" type="submit" value=""/>
+        </fieldset>
+    </form> <!-- END SEARCH FORM --> </div>
+</div>
+            
+        </div> <!-- END HEADER-->
+</div><!--end header content-->
+
+    <div class="anchorPointConfiguration">
+
+
+
+
+
+</div>
+
+    <div class="greenContactCTAConfig">
+
+
+
+
+
+
+</div>
+
+     <div class="analyticsPointConfiguration">
+
+
+
+
+
+    
+</div>
+
+  
+
+
+<script type="text/javascript">
+
+    var HOST_NAME = "http://www.sap.com";
+
+    var SECURE_HOST_NAME = "https://www.sap.com";  
+        
+        function closeRibbon(){
+        	 var el = document.getElementById("bumper");
+             el.style.height="0px";
+             set_current_country("/index.html");
+             set_country_redirect_flag();
+        }
+        
+</script>
+<!--googleon: index-->
+        
+
+
+
+<script>
+    $(document).ready(function() {
+        $('#footer').css({
+            bottom : 0,
+            position: 'absolute'
+        })
+    });
+</script>
+<div id="page-content">
+<div>
+              <div id="nav-main" xmlns="http://www.w3.org/1999/xhtml">                                   
+                   <div class="mainnav mainnavigation">
+
+
+
+
+
+
+
+<script>
+function linkurl(url){
+    window.location.href=url;
+}
+</script>
+
+
+                
+
+                <ul >
+
+                    
+                            
+                                <li>
+                                  <a href="/solution.html" shape="rect"><span>Industries & Solutions</span></a>
+                                </li>
+                            
+                            
+                    
+                            
+                                <li>
+                                  <a href="/services-support.html" shape="rect"><span>Services and Support</span></a>
+                                </li>
+                            
+                            
+                    
+                            
+                                <li>
+                                  <a href="/about.html" shape="rect"><span>About SAP</span></a>
+                                </li>
+                            
+                            
+                    
+                            
+                                <li>
+                                  <a href="/pc.html" shape="rect"><span>Products</span></a>
+                                </li>
+                            
+                            
+                    
+                            
+                                <li>
+                                  <a href="/customer-testimonials.html" shape="rect"><span>Customer Testimonials</span></a>
+                                </li>
+                            
+                            
+                    
+                            
+                                <li>
+                                  <a href="/partners.html" shape="rect"><span>Our Partners</span></a>
+                                </li>
+                            
+                            
+                    
+                            
+                                <li>
+                                  <a href="/leadership.html" shape="rect"><span>Thought Leadership</span></a>
+                                </li>
+                            
+                            
+                    
+                            
+                                <li>
+                                  <a href="/training-education.html" shape="rect"><span>Training & Education</span></a>
+                                </li>
+                            
+                            
+                    
+                            
+                                <li>
+                                  <a href="/events.html" shape="rect"><span>Events</span></a>
+                                </li>
+                            
+                            
+                    
+                </ul>
+
+
+</div>
+                	               
+              </div><!-- END MAIN NAV -->                       </div>
+
+<div id="sap-news"><div class="sapnews sapnewscomp"> 
+
+
+
+
+
+
+
+<script type="text/javascript" src="/etc/clientlibs/sapcom/sapcom.component.content.sapnews.js"></script>
+<link rel="stylesheet" href="/etc/clientlibs/sapcom/sapcom.component.content.sapnews.css" type="text/css">
+
+
+
+
+<p class="news-heading"><a href="#" onclick="s_trackEngagement('newswidget:expand/collapse','1','not available')" shape="rect">SAP News</a></p>
+
+
+<div id="sap-news-wrapper">
+    <ul>
+        
+            
+            
+            <li><a href="http://global.sap.com/news-reader/index.epx?articleId=22471" shape="rect"><span>March 06, 2014</span>SAP Releases Survey Data Reaffirming Rapid Market Changes in Telecommunications Industry</a></li>
+        
+            
+            
+            <li><a href="http://global.sap.com/news-reader/index.epx?articleId=22472" shape="rect"><span>March 06, 2014</span>SAP Survey Reveals Big Data-Driven Customer Insight and Real-Time Offers to Open New Revenue Opportunities for Operators</a></li>
+        
+            
+            
+            <li><a href="http://global.sap.com/news-reader/index.epx?articleId=22468" shape="rect"><span>March 05, 2014</span>SAP and Partners Set New Record for World’s Largest Data Warehouse</a></li>
+        
+            
+            
+            <li><a href="http://global.sap.com/news-reader/index.epx?articleId=22469" shape="rect"><span>March 05, 2014</span>SAP Unveils Next Step for the Cloud powered by SAP HANA®</a></li>
+        
+            
+            
+            <li><a href="http://global.sap.com/news-reader/index.epx?articleId=22352" shape="rect"><span>March 04, 2014</span>SAP to Host Press Conference and Roundtable from CeBIT 2014</a></li>
+        
+            
+            
+            <li><a href="http://global.sap.com/news-reader/index.epx?articleId=22366" shape="rect"><span>March 04, 2014</span>New SAP® Solution Helps Banking Institutions Meet Financial Reporting Requirements</a></li>
+        
+            
+            
+            <li><a href="http://global.sap.com/news-reader/index.epx?articleId=22413" shape="rect"><span>March 04, 2014</span>SAP and Partners at CeBIT 2014: Focus on the Cloud and SAP HANA®</a></li>
+        
+            
+            
+            <li><a href="http://global.sap.com/news-reader/index.epx?articleId=22414" shape="rect"><span>March 03, 2014</span>SAP Bolsters Cloud Leadership, Names Former NGA Human Resources CEO Mike Ettling as Cloud for HR Lead</a></li>
+        
+            
+            
+            <li><a href="http://global.sap.com/news-reader/index.epx?articleId=22407" shape="rect"><span>March 03, 2014</span>SAP Delivers Richer User Experience, Enhanced Mobility and Integrated Social for Easier Travel and Expense Management in the Cloud</a></li>
+        
+            
+            
+            <li><a href="http://global.sap.com/news-reader/index.epx?articleId=22406" shape="rect"><span>March 03, 2014</span>SAP More Than Doubles Sales in Asia Pacific Japan in Banking and Insurance Industries, Expanding Market Presence</a></li>
+        
+    </ul>
+</div>
+<div class="clearfix hide" id="sap-news-bottom" style="z-index: 1000">
+    <a class="btn-news-up" href="#" shape="rect"/> <a class="btn-news-down" href="#" shape="rect"/> <a id="btn-news-reader" class="btn-news-reader" href="http://global.sap.com/news-reader/index.epx?articleId=" shape="rect">Open News Reader</a>
+</div>
+</div>
+</div>
+   
+    <script type="text/javascript" src="/etc/clientlibs/sapcom/sapcom.component.homepage.footer.js"></script>
+
+     <div id="page-tools-hero">
+        <div class="saveandshare saveandsharecomp">
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+    <div  style="display: none;">
+
+   
+   
+                
+           <ul class="page-tools">
+       
+   
+
+
+   
+   
+   
+
+
+
+
+   <li><span class="share">Share</span></li>
+   
+    
+   <li class="addThisLI">      
+    
+      <!-- AddThis Button BEGIN -->
+      <div id="atDiv" class="addthis_toolbox addthis_default_style" addthis:url="http://www.sap.com/content/sapcom/global/usa/en_us.html" addthis:title="USA (en_us)">
+         <div class="custom_images">
+                           
+               
+                   
+                   
+                        <a class="addthis_button_twitter " title="Tweet this" addthis:url="http://www.sap.com/content/sapcom/global/usa/en_us.html?source=social-atw-Tweet_this"><img src="/etc/designs/sapcom/resources/global/ui/images/icons/socialmedia/icon-social-network-twitter-16x16.png" width="16" height="16" border="0" alt="Tweet this"/></a>
+                   
+                 
+                           
+               
+                   
+                   
+                        <a class="addthis_button_facebook " title="Share on Facebook" addthis:url="http://www.sap.com/content/sapcom/global/usa/en_us.html?source=social-atw-Share_on_Facebook"><img src="/etc/designs/sapcom/resources/global/ui/images/icons/socialmedia/icon-social-network-facebook-16x16.png" width="16" height="16" border="0" alt="Share on Facebook"/></a>
+                   
+                 
+                           
+               
+                   
+                   
+                        <a class="addthis_button_linkedin " title="Share on LinkedIn" addthis:url="http://www.sap.com/content/sapcom/global/usa/en_us.html?source=social-atw-Share_on_LinkedIn"><img src="/etc/designs/sapcom/resources/global/ui/images/icons/socialmedia/icon-social-network-linkedin-16x16.png" width="16" height="16" border="0" alt="Share on LinkedIn"/></a>
+                   
+                 
+                           
+               
+                   
+                   
+                        <a class="addthis_button_google_plusone_share g:plusone:annotation='none'" title="Share on Google+" addthis:url="http://www.sap.com/content/sapcom/global/usa/en_us.html?source=social-atw-Share_on_Google+"><img src="/etc/designs/sapcom/resources/global/ui/images/icons/socialmedia/icon-social-network-googleplus-16x16.png" width="16" height="16" border="0" alt="Share on Google+"/></a>
+                   
+                 
+                           
+               
+                   
+                        <a class="addthis_button_email " title="Email" addthis:url="http://www.sap.com/content/sapcom/global/usa/en_us.html?source=email-atw-Email"><img src="/etc/designs/sapcom/resources/global/ui/images/icons/socialmedia/icon-social-network-mail-16x16.png" width="16" height="16" border="0" alt="Email"/></a>
+                   
+                   
+                 
+                        
+            <a id="atC" class="addthis_counter addthis_bubble_style"></a>
+         </div>
+         
+         <script type="text/javascript">
+                                    
+                var addthis_config = {
+                "data_track_addressbar":false,
+                "ui_open_windows":true
+                };
+    
+                //The followin are to remove the click event on the bubble with the count and to prevent all the extra add this stuff from displaying.                        
+                $(window).load(function () {
+                    var at=setTimeout(addthis_checkForExpanded,1000);
+                });
+                addthis_attempts = 4;
+                
+                function addthis_checkForExpanded() {
+                    addthis_attempts--;
+                    if ($('.addthis_button_expanded').length > 0) {
+                        addthis_removeBookmarks();
+                    } else {
+                        if (addthis_attempts > 0) {
+                            at=setTimeout(addthis_checkForExpanded,1000);
+                        }
+                    }
+                }
+                
+                function addthis_removeBookmarks() {
+                    $('.addthis_counter').each(function () {
+                        if ($(this).find('.addthis_button_expanded').length > 0) {
+                            newVal = $(this).find('.addthis_button_expanded').html();
+                            theCount = $(this).find('.addthis_button_expanded').html();
+                            $(this).find('.addthis_button_expanded').unbind();
+                            $(this).find('.addthis_button_expanded').remove();
+                            var newHTML = '<a href="" onclick="return false;" style="font-size: 11px; margin-bottom: 3px; padding-bottom: 4px; line-height: 16px; color: #000000;">' + newVal + '</a>';
+                            $(this).html(newHTML);
+                        }
+                    });    
+
+                    //Disable click event
+                    $('.addthis_counter').click(function (e) {
+                        e.preventDefault();
+                    });
+                }               
+
+         </script>    
+              
+         <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#pubid=sapglobalmarketing"></script>
+         
+      </div><!-- AddThis Button END -->
+   </li>   
+   
+
+
+
+ 
+    </ul>  
+  
+
+
+
+
+ 
+    
+       
+       
+           
+           <script type="text/javascript">
+               try{                   
+                   $('#page-tools-hero>.saveandshare').addClass('saveandshareRight');
+               }catch(e){
+               }
+           </script>          
+       
+    
+
+
+
+    </div>
+    <script>
+       $('#page-tools-hero>.saveandshare').removeClass('saveandshareRight');
+    </script>
+</div>
+
+     </div>
+    
+    <div class='mboxDefault' id='homepagehero'>
+    <div class="homepageherocont homepagehero">	
+	
+	
+	
+	
+	
+	
+	
+	 
+	 
+	
+	
+	
+	
+	
+	 
+	     <div id="hero">   
+	 
+	    
+	    
+	<input type="hidden" id="time" value="2" >
+	<input type="hidden" id="path" value="/content/sapcom/global/usa/en_us">
+	<input type="hidden" id="heroId" >
+	
+	 
+	
+	    <input type="hidden" id="type"  value="text" >
+	     <div id="sap_glo_hp_hero"><span
+	        id="home_page_identifier" style="display: none"><!-- DO NOT REMOVE --></span>
+	    
+	       
+	
+	       
+	            
+	                
+	             
+	             
+	         
+	        
+	          
+	                
+	                <ul>
+	                    <li id="hero1" rel="275307.jpg"
+	                         style="display: block">
+	                   
+	                    <h2>What do 3M, eBay, and Under Armour have in common?</h2>
+	                    
+	                    <p>See how top companies like yours have achieved uncommon performance using our solutions.</p>
+	               
+	                     
+	                        
+	                         
+	                         
+	                          
+	                          
+	                            <a href="/customer-testimonials/index.html?url_id=banner-us-homepage-success-stories-dbtstctrl-q12014" target="_self" onclick="homePageTracking('http://www.sap.com/customer-testimonials/indexx?url_id=banner-us-homepage-success-stories-dbtstctrl-q12014','banner-us-homepage-success-stories-dbtstctrl-q12014');" class="btn-cta"><span>Read the success stories</span></a>
+	                        
+	                      
+	                    
+	                    
+	                     
+	                     </li>
+	                     </ul>
+	                   
+	                   
+	                  
+	           
+	                
+	                <ul>
+	                    <li id="hero2" rel="272216.jpg"
+	                        class="rm_randomizer"
+	                         >
+	                   
+	                    <h2>30 minutes to faster business</h2>
+	                    
+	                    <p>Power all of your business processes with SAP HANA Cloud Platform – get started right away.</p>
+	               
+	                     
+	                        
+	                         
+	                         
+	                          
+	                          
+	                            <a href="http://marketplace.saphana.com?url_id=banner-us-homepage-hana-hecplatform-mar14r1" target="_blank" onclick="homePageTracking('http://marketplace.saphana.com?url_id=banner-us-homepage-hana-hecplatform-mar14r1','banner-us-homepage-hana-hecplatform-mar14r1');" class="btn-cta"><span>Get more details</span></a>
+	                        
+	                      
+	                    
+	                    
+	                     
+	                     </li>
+	                     </ul>
+	                   
+	                   
+	                  
+	           
+	                
+	                <ul>
+	                    <li id="hero3" rel="272356.jpg"
+	                        class="rm_randomizer"
+	                         >
+	                   
+	                    <h2>Re-inventing the data warehouse</h2>
+	                    
+	                    <p>See why SAP has been named a leader by industry experts.</p>
+	               
+	                     
+	                        
+	                         
+	                         
+	                          
+	                          
+	                            <a href="/content//sapcom/global/usa/en_us/pc/tech/database/featured/offers/dbms-gartner-report.html?url_id=banner-us-homepage-database-gartner mq-mar14r1" target="_self" onclick="homePageTracking('http://www.sap.com/pc/tech/database/featured/offers/dbms-gartner-reportt?url_id=banner-us-homepage-database-gartner mq-mar14r1','banner-us-homepage-database-gartner mq-mar14r1');" class="btn-cta"><span>Read the reports now</span></a>
+	                        
+	                      
+	                    
+	                    
+	                     
+	                     </li>
+	                     </ul>
+	                   
+	                   
+	                  
+	           
+	                
+	                <ul>
+	                    <li id="hero4" rel="273627.jpg"
+	                        class="rm_randomizer"
+	                         >
+	                   
+	                    <h2>Are your people motivated? Aligned? Appreciated?</h2>
+	                    
+	                    <p>Discover the keys to employee engagement.</p>
+	               
+	                     
+	                        
+	                         
+	                         
+	                          
+	                          
+	                            <a href="/pc/tech/cloud.html?url_id=banner-us-homepage-cloud-hr-digital-hub-keys-to-engage-mar14r1" target="_self" onclick="homePageTracking('http://www.sap.com/pc/tech/cloudd?url_id=banner-us-homepage-cloud-hr-digital-hub-keys-to-engage-mar14r1','banner-us-homepage-cloud-hr-digital-hub-keys-to-engage-mar14r1');" class="btn-cta"><span>Get the details now</span></a>
+	                        
+	                      
+	                    
+	                    
+	                     
+	                     </li>
+	                     </ul>
+	                   
+	                   
+	                  
+	           
+	                
+	                <ul>
+	                    <li id="hero5" rel="274760.jpg"
+	                        class="rm_randomizer"
+	                         >
+	                   
+	                    <h2>SAPPHIRE NOW –<br>More focus, easier access</h2>
+	                    
+	                    <p>Discover our three streamlined campuses: Industry, Line of Business, and Technology.</p>
+	               
+	                     
+	                        
+	                         
+	                         
+	                          
+	                          
+	                            <a href="http://bit.ly/1dT5Lmr?url_id=banner-us-homepage-events-sanow-campuses-mar14r1" target="_blank" onclick="homePageTracking('http://bit.ly/1dT5Lmr?url_id=banner-us-homepage-events-sanow-campuses-mar14r1','banner-us-homepage-events-sanow-campuses-mar14r1');" class="btn-cta"><span>Learn more and register</span></a>
+	                        
+	                      
+	                    
+	                    
+	                     
+	                     </li>
+	                     </ul>
+	                   
+	                   
+	                  
+	           
+	    
+	   </div>
+	
+	 <script type="text/javascript">
+	    var imageRotationTime = 10;
+	 //   mboxCreate('sap_glo_hp_hero');
+	    
+	    function OpenTwitterLink(hashtag){
+	        //if(hashtag.indexOf("#") >= 0){
+	        //    hashtag = hashtag.substring(1,hashtag.length);
+	        //}
+	        //var finalUrl = "https://twitter.com/search?q=SAP%20%23"+hashtag;
+	        //window.open(finalUrl);
+	        
+	        window.location.href=hashtag;
+	       
+	    }
+		function openover(){
+	                        $('.UMP_open_asset').each(function(index) {
+	                            var cqRelativeURL = "/content/sapcom/asset.html";
+	                            var theSource = $(this).attr('href');
+	                            var inputURL = "http://www.sap.com/asset/index.epx"; 
+	                            
+	                            if (theSource.indexOf("germany") != -1) {
+	                                    inputURL = "http://www.sap.com/germany/asset/index.epx"
+	                            }
+	                            
+	                            theSource = theSource.replace(inputURL, cqRelativeURL);
+	     
+	                            if (theSource != "") {
+	                                $(this).attr('href', "");
+	                                
+	                                  UMP.openModalWindowAsset(theSource);
+	                                  return false;
+	                               
+	                            }
+	                        });
+	                    	}
+	    
+	   
+	    </script>
+	    </div>
+	    
+</div>
+
+    </div><script type='text/javascript'>mboxCreate('sapcom_global_usa_en_us_homepagehero')</script>
+
+</div>
+<!-- END PAGE CONTENT -->
+        
+        <div id="footer">
+            <div class="parbase sapfooter">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="column"> 
+        <div>
+        
+        
+              <a class="top" href="/sitemap/index.html" target="_self" id="" onclick="s_trackEngagement('footer:Site Map','1','http://www.sap.com/sitemap/index.html')" shape="rect">Site Map</a>
+        
+        
+        
+        
+        
+        
+        
+        </div>
+    
+
+    <div>    <a class="bottom" href="http://global.sap.com/corporate-en/using-sap-com/index.epx" shape="rect">Using SAP</a>
+    </div>
+    </div>
+
+    <div class="column">
+        <div id="quick-links"><a class="top" href="" onclick="s_trackEngagement('footer:Quick Links','1','http://www.sap.com/content/sapcom/global/usa/en_us')" shape="rect">
+        Quick Links</a>   
+        <ul>
+            
+                 
+                <li><a href="http://global.sap.com/corporate-en/index.epx" shape="rect" target="_blank" onclick="s_trackEngagement('footer:quicklink:About SAP AG','1','http://global.sap.com/corporate-en/index.epx');">
+                About SAP AG
+</a></li>
+
+            
+                 
+                <li><a href="/pc/analytics/applications/strategy.html" shape="rect" target="_self" onclick="s_trackEngagement('footer:quicklink:Analytics','1','http://www.sap.com/pc/analytics/applications/strategy.html');">
+                Analytics
+</a></li>
+
+            
+                 
+                <li><a href="/solution/big-data.html" shape="rect" target="_self" onclick="s_trackEngagement('footer:quicklink:Big Data','1','http://www.sap.com/solution/big-data.html');">
+                Big Data
+</a></li>
+
+            
+                 
+                <li><a href="/pc/analytics/business-intelligence.html" shape="rect" target="_self" onclick="s_trackEngagement('footer:quicklink:Business Intelligence','1','http://www.sap.com/pc/analytics/business-intelligence.html');">
+                Business Intelligence
+</a></li>
+
+            
+                 
+                <li><a href="/pc/bp/customer-relationship-management.html" shape="rect" target="_self" onclick="s_trackEngagement('footer:quicklink:CRM Software','1','http://www.sap.com/pc/bp/customer-relationship-management.html');">
+                CRM Software
+</a></li>
+
+            
+                 
+                <li><a href="/pc/tech/cloud.html" shape="rect" target="_self" onclick="s_trackEngagement('footer:quicklink:Cloud Computing','1','http://www.sap.com/pc/tech/cloud.html');">
+                Cloud Computing</a></li>
+
+            
+                 
+                <li><a href="/solution/sme/software/analytics/crystal-bi/index.html" shape="rect" target="_self" onclick="s_trackEngagement('footer:quicklink:Crystal Reports','1','http://www.sap.com/solution/sme/software/analytics/crystal-bi/index.html');">
+                Crystal Reports
+</a></li>
+
+            
+                 
+                <li><a href="/pc/bp/erp.html" shape="rect" target="_self" onclick="s_trackEngagement('footer:quicklink:ERP Software','1','http://www.sap.com/pc/bp/erp.html');">
+                ERP Software
+</a></li>
+
+            
+                 
+                <li><a href="/pc/tech/in-memory-computing-hana.html" shape="rect" target="_self" onclick="s_trackEngagement('footer:quicklink:In-Memory Computing (SAP HANA)','1','http://www.sap.com/pc/tech/in-memory-computing-hana.html');">
+                In-Memory Computing (SAP HANA)
+</a></li>
+
+            
+                 
+                <li><a href="/pc/tech/internet-of-things.html" shape="rect" target="_self" onclick="s_trackEngagement('footer:quicklink:Internet of Things','1','http://www.sap.com/pc/tech/internet-of-things.html');">
+                Internet of Things
+</a></li>
+
+            
+                 
+                <li><a href="/pc/tech/mobile.html" shape="rect" target="_self" onclick="s_trackEngagement('footer:quicklink:Mobility Solutions','1','http://www.sap.com/pc/tech/mobile.html');">
+                Mobility Solutions</a></li>
+
+            
+                 
+                <li><a href="http://scn.sap.com/welcome" shape="rect" target="_blank" onclick="s_trackEngagement('footer:quicklink:SCN – SAP Community Network','1','http://scn.sap.com/welcome');">
+                SCN – SAP Community Network
+</a></li>
+
+            
+                 
+                <li><a href="/solution/sme.html" shape="rect" target="_self" onclick="s_trackEngagement('footer:quicklink:Small and Midsize Business','1','http://www.sap.com/solution/sme.html');">
+                Small and Midsize Business
+</a></li>
+
+            
+                 
+                <li><a href="/training-education/overview.html" shape="rect" target="_self" onclick="s_trackEngagement('footer:quicklink:Training and Education','1','http://www.sap.com/training-education/overview.html');">
+                Training and Education</a></li>
+
+            
+        </ul>
+        </div>
+     
+
+    <div>    <a class="bottom" href="http://global.sap.com/corporate-en/our-company/legal/privacy.epx" shape="rect" target="_self">Privacy</a>
+    </div>
+    </div>
+
+    <div class="column"> 
+        <div>
+        
+        
+              <a class="top" href="/directory/main.html" target="_self" id="" onclick="s_trackEngagement('footer:SAP Offices','1','http://www.sap.com/directory/main.html')" shape="rect">SAP Offices</a>
+        
+        
+        
+        
+        
+        
+        
+        </div>
+    
+
+    <div>    <a class="bottom" href="http://global.sap.com/corporate-en/our-company/legal/terms_of_use.epx" shape="rect">Terms of Use</a>
+    </div>
+    </div>
+
+    <div class="column"> 
+        <div>
+        
+        
+              <a class="top" href="http://global.sap.com/corporate-en/investors/index.epx" target="_self" id="" onclick="s_trackEngagement('footer:Investors','1','http://global.sap.com/corporate-en/investors/index.epx')" shape="rect">Investors</a>
+        
+        
+        
+        
+        
+        
+        
+        </div>
+    
+
+    <div>    <a class="bottom" href="http://global.sap.com/about-sap/company/legal/impressum_USA.epx" shape="rect">Legal Disclosure</a>
+    </div>
+    </div>
+
+    <div class="column"> 
+        <div>
+        
+        
+              <a class="top" href="http://global.sap.com/corporate-en/press/index.epx" id="" onclick="s_trackEngagement('footer:Press','1','http://global.sap.com/corporate-en/press/index.epx')" shape="rect">Press</a>
+        
+        
+        
+        
+        
+        
+        
+        </div>
+    
+
+    <div>    <a class="bottom" href="http://global.sap.com/corporate-en/our-company/legal/copyright/index.epx" shape="rect" target="_blank">Copyright</a>
+    </div>
+    </div>
+
+    <div class="column"> 
+        <div>
+        
+        
+              <a class="top" href="http://www.careersatsap.com/" id="" onclick="s_trackEngagement('footer:Careers','1','http://www.careersatsap.com/')" shape="rect">Careers</a>
+        
+        
+        
+        
+        
+        
+        
+        </div>
+    
+
+    <div>    <a class="bottom" href="http://global.sap.com/corporate-en/legal/copyright/index.epx#trademark" shape="rect">Trademark</a>
+    </div>
+    </div>
+
+    <div class="column"> 
+        <div>
+        
+        
+        
+        <div class="top">&nbsp</div>
+          
+        
+        
+        
+        
+        
+        
+        </div>
+    
+
+    <div>    <a class="bottom" href="#" shape="rect" target="_self" id="footer-textview">Text View</a>
+    </div>
+    </div>
+
+    <div class="column"> 
+        <div>
+        
+        
+        
+        <div class="top">&nbsp</div>
+          
+        
+        
+        
+        
+        
+        
+        </div>
+    
+
+    <div>    <a class="bottom" href="#" shape="rect" target="_self" id="footer-printview">Print View</a>
+    </div>
+    </div>
+
+
+
+       
+
+<div id="footer-right">
+
+    
+    
+        
+    
+        
+        
+         <a title="Linkedin" style="background-image: url('/etc/designs/sapcom/resources/global/ui/images/icons/socialmedia/icon-social-network-linkedin-16x16.png')" class="icon social-footer-sm" onclick="s_trackEngagement('footer:social:Linkedin','1','http://www.sap.com/communities/hub/linkedin.html');" href="/communities/hub/linkedin.html">&nbsp;</a>
+
+        
+         <a title="Youtube" style="background-image: url('/etc/designs/sapcom/resources/global/ui/images/icons/socialmedia/icon-social-network-youtube-16x16.png')" class="icon social-footer-sm" onclick="s_trackEngagement('footer:social:Youtube','1','http://www.sap.com/communities/hub/youtube.html');" href="/communities/hub/youtube.html">&nbsp;</a>
+
+        
+         <a title="Facebook" style="background-image: url('/etc/designs/sapcom/resources/global/ui/images/icons/socialmedia/icon-social-network-facebook-16x16.png')" class="icon social-footer-sm" onclick="s_trackEngagement('footer:social:Facebook','1','http://www.sap.com/communities/hub/facebook.html');" href="/communities/hub/facebook.html">&nbsp;</a>
+
+        
+         <a title="Twitter" style="background-image: url('/etc/designs/sapcom/resources/global/ui/images/icons/socialmedia/icon-social-network-twitter-16x16.png')" class="icon social-footer-sm" onclick="s_trackEngagement('footer:social:Twitter','1','http://www.sap.com/communities/hub/twitter.html');" href="/communities/hub/twitter.html">&nbsp;</a>
+
+        
+         <a title="" target="blank" style="background-image: url('/etc/designs/sapcom/resources/global/ui/images/icons/socialmedia/icon-social-network-googleplus-16x16.png')" class="icon social-footer-sm" onclick="s_trackEngagement('footer:social:','1','https://plus.google.com/+SAP/');" href="https://plus.google.com/+SAP/">&nbsp;</a>
+
+        
+         <a title="Slideshare" style="background-image: url('/etc/designs/sapcom/resources/global/ui/images/icons/socialmedia/icon-social-network-slideshare-16x16.png')" class="icon social-footer-sm" onclick="s_trackEngagement('footer:social:Slideshare','1','http://www.sap.com/communities/hub/slideshare.html');" href="/communities/hub/slideshare.html">&nbsp;</a>
+
+        
+    
+    
+
+
+    
+    
+</div>    </div>
+
+        </div>
+        <!-- END FOOTER -->
+    </div>
+    
+    <script src="/etc/designs/sapcom/resources/global/ui/js/functionsandplugins.js" type="text/javascript"></script>
+    <script src="/etc/designs/sapcom/resources/global/ui/js/pageload.js" type="text/javascript"></script>
+   
+    <script src="/etc/designs/sapcom/resources/global/ui/js/common.js" type="text/javascript"></script>
+    <script src="/etc/designs/sapcom/resources/global/ui/js/trackinghelper.js" type="text/javascript"></script>
+    <script src="/etc/designs/sapcom/resources/global/ui/js/securelayers.js" type="text/javascript"></script>
+    <script src="/etc/designs/sapcom/resources/global/ui/js/securedforms.js" type="text/javascript"></script>
+    <script src="/etc/designs/sapcom/resources/global/js/remote.js" type="text/javascript"></script>
+    <script src="/etc/designs/sapcom/resources/global/ui/js/survey.js" type="text/javascript"></script>
+    <script src="/etc/designs/sapcom/resources/global/ui/js/jquery-ui.js" type="text/javascript"></script>
+    <script src="/etc/clientlibs/sapcom/sapcom.component.homepage.footer/js/footer.js" type="text/javascript"></script>
+    <script src="/etc/designs/sapcom/resources/global/js/equalize.js" type="text/javascript"></script>
+
+    
+    
+   
+    <script type='text/javascript' src="/etc/designs/sapcom/analytics/sapcms_s_code.js"></script>
+    <script language="JavaScript" type="text/javascript"><!--
+    /*** CUSTOM CODE - START ***/
+    
+
+
+
+
+    
+
+    /*** CUSTOM CODE - END ***/
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+
+        
+    </body>
+</html>

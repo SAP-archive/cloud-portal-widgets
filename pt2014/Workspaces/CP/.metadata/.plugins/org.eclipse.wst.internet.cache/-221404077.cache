@@ -1,0 +1,57 @@
+﻿<!-- TOOLBAR_EXEMPT -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xmlns:rddl="http://www.rddl.org/"
+      xml:lang="en" lang="en">
+<head>
+  <title>MTOM Serialization Policy Assertion (WS-MTOMPolicy)</title>
+  <link href="http://www.rddl.org/xrd.css" type="text/css" rel="stylesheet" />
+	<style type="text/css">
+.style1 {
+	font-size: small;
+}
+</style>
+</head>
+
+<body>
+  <h1>MTOM Serialization Policy Assertion (WS-MTOMPolicy)</h1>
+
+  <p>September 2006</p>
+
+  <h2>Introduction</h2>
+  <p>This document describes a directory of links to resources related to WS-MTOMPolicy.</p>
+
+  <h2>Schema for WS-MTOMPolicy:</h2>
+  <rddl:resource 
+    id='WS-MTOMPolicy_Schema'
+    xlink:title='WS-MTOMPolicy schema document'
+    xlink:role='http://www.w3.org/2001/XMLSchema' 
+    xlink:arcrole='http://www.rddl.org/purposes#schema-validation' 
+    xlink:href='wsrt.xsd' 
+    xlink:type='simple' 
+    xlink:show='none' 
+    xlink:actuate='none'>
+    <p><span class="style1">
+	<a href="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization/optimizedmimeserialization-policy.xsd">
+	http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization/optimizedmimeserialization-policy.xsd</a></span></p>
+  </rddl:resource>
+
+  <h2>WSDL for WS-MTOMPolicy:</h2>
+  <rddl:resource 
+    id='WS-MTOMPolicy_WSDL'
+    xlink:title='WS-MTOMPolicy WSDL document'
+    xlink:role='http://schemas.xmlsoap.org/wsdl/' 
+    xlink:arcrole='http://www.w3.org/TR/wsdl' 
+    xlink:href='wsrt.wsdl' 
+    xlink:type='simple' 
+    xlink:show='none' 
+    xlink:actuate='none'>
+    <p>None.</p>
+  </rddl:resource>
+
+  <h2>Specification:</h2>
+  <p>
+  <a href="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization/optimizedmimeserialization-policy.pdf">The WS-MTOMPolicy specification</a></p>
+</body>
+</html>

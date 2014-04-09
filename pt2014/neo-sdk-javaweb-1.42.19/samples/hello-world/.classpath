@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+  <classpathentry including="**/*.java" kind="src" output="war/WEB-INF/classes" path="src">
+    <attributes>
+      <attribute name="optional" value="true"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+    <attributes>
+      <attribute name="owner.project.facets" value="java"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+  <classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+  <classpathentry kind="output" path="war/WEB-INF/classes"/>
+  
+  <classpathentry kind="con" path="org.eclipse.jst.server.core.container/com.sap.core.runtime.sdkTarget/SAP HANA Cloud">
+    <attributes>
+      <attribute name="owner.project.facets" value="jst.web"/>
+    </attributes>
+  </classpathentry>
+</classpath>

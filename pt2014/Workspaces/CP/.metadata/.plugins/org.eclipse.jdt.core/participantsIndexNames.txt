@@ -1,7 +1,0 @@
-INDEX VERSION 1.126
-C:\pt2014\Workspaces\CP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2807300627.index
-\AtomicContent\src
-C:\pt2014\Workspaces\CP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3741821772.index
-\AtomicContent\src
-C:\pt2014\Workspaces\CP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4108264291.index
-\AtomicContent\src

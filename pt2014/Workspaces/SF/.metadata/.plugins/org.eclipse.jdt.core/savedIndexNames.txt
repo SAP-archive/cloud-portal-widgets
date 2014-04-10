@@ -1,1 +1,0 @@
-INDEX VERSION 1.126+C:\pt2014\Workspaces\SF\.metadata\.plugins\org.eclipse.jdt.core

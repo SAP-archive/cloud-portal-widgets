@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?NLS TYPE="org.eclipse.help.toc"?>
-
-<toc label="Concepts" link_to="/com.sap.adt.abapdev.guide.doc.user/toc_Concepts.xml#support.info.collector.concepts"> 
- <topic href="html/concepts/support_info_collector.html" label="Support Information Collector">
- </topic>
-</toc>

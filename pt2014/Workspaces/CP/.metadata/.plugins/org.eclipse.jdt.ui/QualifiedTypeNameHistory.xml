@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.codehaus.jackson.map.ObjectMapper"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="org.apache.axis2.json.JSONDataSource"/>
-<fullyQualifiedTypeName name="org.json.simple.parser.JSONParser"/>
-<fullyQualifiedTypeName name="org.json.simple.JSONArray"/>
-<fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
-</qualifiedTypeNameHistroy>

@@ -1,0 +1,4 @@
+Name=google__public
+URL=https\://ajax.googleapis.com
+Type=HTTP
+Authentication=NoAuthentication

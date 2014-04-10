@@ -1,0 +1,5 @@
+Name=benefits
+Authentication=AppToAppSSO
+Type=HTTP
+ProxyType=Internet
+URL=https\://benefitsae301b3ec-ae301b3ec.us1.hana.ondemand.com/com.sap.hana.cloud.samples.benefits

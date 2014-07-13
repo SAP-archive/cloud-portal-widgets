@@ -1,0 +1,4 @@
+Name=yahoo
+URL=http\://query.yahooapis.com/
+Type=HTTP
+Authentication=NoAuthentication

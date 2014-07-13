@@ -1,0 +1,14 @@
+{
+"authenticationMethod": "none",
+
+    "routes": [
+        {
+            "path": "/financialdata",            
+            "target": {
+              "type": "destination",
+              "name": "yahoo"
+            },
+            "description": "Yahhoo Financial Data Service"
+        }
+    ]	
+}

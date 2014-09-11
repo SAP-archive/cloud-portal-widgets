@@ -4,7 +4,10 @@
 			var SYSTEM_TYPE_SELECT  = "select";
 			var SYSTEM_TYPE_C4C   = "c4c";
 			var SYSTEM_TYPE_CRM = "crm";
+			
+			var ON_PREMISE_CRM_URL = 'http://dest.crm__public/connectivity/proxy/sap/opu/odata/sap/ZDEMO_LEAD_SRV';
 			var targetSystem;
+			var oDataModel;
 			
 			var prefs = new gadgets.GadgetPrefs();
 			var widgetId = prefs.getWidgetId();
@@ -263,8 +266,6 @@
 				commentsL.setLabelFor(commentsTA);	
 
 				var registerLargeImg = new sap.ui.commons.Image("i1");
-				//registerLargeImg.setSrc("https://dl.dropboxusercontent.com/u/73925382/opensocial/form/big_register.png");				
-				//registerLargeImg.setSrc("/atomiccontent/widgets/registrationform/images/big_register.png");
 				
 				var applicationURL = gadgets.util.getUrlParameters().url;
 				var relativePath = applicationURL.substring(0, applicationURL.indexOf("form.spec.xml"));
@@ -497,83 +498,77 @@
 				company =  oCore.getControl('TF-Company').getValue(),
 				message = oCore.getControl('TA-Comments').getValue();
 			
-				if( isCRM ){						
-					// Put inside a JSON and return it
-					formData = {
-						"d" : {
-							"__metadata" : {
-								"id" : "http://iltlvh609.tlv.sap.corp:8000/sap/opu/odata/sap/ZDEMO_LEAD_SRV/Leads",
-								"uri" : "http://iltlvh609.tlv.sap.corp:8000/sap/opu/odata/sap/ZDEMO_LEAD_SRV/Leads",
-								"type" : "ZDEMO_LEAD_SRV.Lead"
-							},
-							"Name" : name,
-							"Email" : email,
-							"Country" : phone,
-							"Company" : company,
-							"Message" : message
-						}
-					};
-					
-				
+				if( isCRM ){																
+					formData = {};
+					formData.Name = name;
+					formData.Email = email;
+					formData.Country = phone;
+					formData.Company = company;
+					formData.Message = message;									
 				}
-				else{					
-					
-				formData = {								
-								"name" : name,
-								"title" : role,
-								"email" : email,
-								"phone" : phone,
-								"company" : company,
-								"message" : message,
-								"isLocal" : isLocal
-							};
-					//formData = "name="+name+"&title="+role+"&company="+company+"&email="+email+"&phone="+phone+"&message="+message+"&isLocal="+isLocal;					
+				else{									
+					formData = {								
+						"name" : name,
+						"title" : role,
+						"email" : email,
+						"phone" : phone,
+						"company" : company,
+						"message" : message,
+						"isLocal" : isLocal
+					};			
 				}
 				
 				return formData;				
 			};
 			
 			function showFormError(errMsg) {
-				// Get error container
 				var errorContainer = jQuery('#emf-error-msg span');
-				// Put the error message
 				errorContainer.html(errMsg);
 			}
 			
 			function formSubmitAjax() {
 				if(targetSystem === SYSTEM_TYPE_CRM){
-					formSubmitAjaxToCRM();
+					formSubmitAjaxToCRMNew();
 				}
 				else{
 					formSubmitAjaxToC4C();
 				}
 			}
 			
-			/*
-			 * Execute ajax request to backend system using makeRequest 
-			 */
-			function formSubmitAjaxToCRM() {
 			
-				
-				var url = 'http://dest.crm__public/connectivity.proxy/proxy/crm/sap/opu/odata/sap/ZDEMO_LEAD_SRV/Leads';
-				var postdata = composePostPayload( true, false );
-				var params = {};
-				
-				var postdataStr = JSON.stringify(postdata);
-				
-				params[gadgets.io.RequestParameters.POST_DATA] = postdataStr;
-				params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
-		
-				var callback = function ajaxCallback(result) {
-					if (result['rc'] === 201) {
-						showFormSuccess();
-					} else {
-						showFormError("Could not connect to CRM system.");
-					}
-				};
-		
-				gadgets.io.makeRequest(url, callback, params);
+			function formSubmitAjaxToCRMNew() {
+				debugger;
+				if(!this.oDataModel){
+					this.oDataModel = new sap.ui.model.odata.ODataModel( ON_PREMISE_CRM_URL );
+					this.oDataModel.refreshSecurityToken(refreshTokenSuccess, refreshTokenError, true);
+				}else{
+					refreshTokenSuccess(null);
+				}				
 			}
+			
+			
+			function refreshTokenSuccess(oData){
+			    console.log("Successfuly fetched CSRF Token");
+			    
+			    var postdata = composePostPayload( true, false );
+				var params = {};
+			    params.success = showFormSuccess;
+				params.error = createNewLeadError;
+		    		
+				this.oDataModel.create('/Leads', postdata, params);
+			}
+			
+			function refreshTokenError(typeError){
+			    console.log("Failed to fetch CSRF Token - future POST request will fail.");
+			    console.log("Status Code: " + typeError.response.statusCode + "\n" +
+					   "Status Text: " + typeError.response.statusText + "\n" +
+				       "Response Body: " + typeError.response.body);
+			}
+			
+			
+			function createNewLeadError(){
+				showFormError("Could not connect to CRM system.");
+			}			
 			
 			
 			function showFormSuccess(){
@@ -588,9 +583,7 @@
 			
 			function formSubmitAjaxToC4C(){
 		    	var src;
-		    	var isLocal = false;
 		    	if(document.URL.indexOf("localhost:8080") > -1 ){
-		    		isLocal = true;
 		    		src =  window.location.origin + "/atomiccontent/C4CConnectorServlet";
 		    	}
 		    	else{
@@ -603,17 +596,12 @@
 		    	
 		    	var xmlhttp=new XMLHttpRequest();
 		    	xmlhttp.onreadystatechange = function() {
-		            if (xmlhttp.readyState === 2) {
-		            	
-		            	showFormSuccess();
-		            	
-		               /* if (xmlhttp.status === 201) {
-		                           // OK
+		            if (xmlhttp.readyState === 4) {
+		                if (xmlhttp.status === 201) {
 		                	showFormSuccess();
 		                } else {
-		                           // not OK
 		                	 showFormError("Could not connect to C4C system: " + xmlhttp.responseText);
-		                }*/
+		                }
 		            }
 		    	};
 		    	
@@ -621,8 +609,7 @@
 				var name = oCore.getControl('TF-F-Name').getValue();
 		    	
 		    	xmlhttp.open("POST",src);
-		    	xmlhttp.send("name="+name);
-							
+		    	xmlhttp.send("name="+name);					
 			}		
 			
 		    
@@ -638,8 +625,8 @@
 				jQuery('#formSettingsDiv').hide();
 				jQuery('#formBodyID').show();
 				jQuery('#formSuccessDiv').hide();
-			}		
-				
+			}
+			
 		
 		function loadViews(){
 			

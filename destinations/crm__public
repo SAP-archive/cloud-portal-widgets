@@ -1,4 +1,6 @@
 Name=crm__public
-URL=https\://proxyi064832trial.hanatrial.ondemand.com:443
+URL=https\://connectivityp1940349341trial.hanatrial.ondemand.com:443
 Type=HTTP
 Authentication=NoAuthentication
+ProxyType=Internet
+CloudConnectorVersion=2

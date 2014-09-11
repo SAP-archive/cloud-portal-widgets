@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
   <ModulePrefs title="Registration Form" description="Registration data persisted in CRM or C4C systems">
-        <Require feature="gadgetprefs"/>        
+        <Require feature="gadgetprefs"/>
+        <Require feature="sap-xhrwrapper" />      
         <Require feature="sap-menu"/>
   </ModulePrefs>
    <UserPref name="targetSystem" default_value="select"/>

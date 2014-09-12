@@ -528,7 +528,7 @@
 			
 			function formSubmitAjax() {
 				if(targetSystem === SYSTEM_TYPE_CRM){
-					formSubmitAjaxToCRMNew();
+					formSubmitAjaxToCRM();
 				}
 				else{
 					formSubmitAjaxToC4C();
@@ -536,7 +536,7 @@
 			}
 			
 			
-			function formSubmitAjaxToCRMNew() {
+			function formSubmitAjaxToCRM() {
 				debugger;
 				if(!this.oDataModel){
 					this.oDataModel = new sap.ui.model.odata.ODataModel( ON_PREMISE_CRM_URL );
